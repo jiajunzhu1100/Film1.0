@@ -15,18 +15,18 @@
 		1407AC161BC10915004A8644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1407AC141BC10915004A8644 /* LaunchScreen.storyboard */; };
 		1407AC211BC10915004A8644 /* Film1_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1407AC201BC10915004A8644 /* Film1_0Tests.m */; };
 		1407AC2C1BC10915004A8644 /* Film1_0UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1407AC2B1BC10915004A8644 /* Film1_0UITests.m */; };
-		1407AC3B1BC10937004A8644 /* gangjiong@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1407AC3A1BC10937004A8644 /* gangjiong@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		1407AC401BC109D4004A8644 /* OnSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1407AC3E1BC109D4004A8644 /* OnSaleViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1407AC411BC109D4004A8644 /* OnSaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1407AC3F1BC109D4004A8644 /* OnSaleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		14CA59D41BC112A9006829DB /* SoonOnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA59D21BC112A9006829DB /* SoonOnViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14CA59D51BC112A9006829DB /* SoonOnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CA59D31BC112A9006829DB /* SoonOnViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		14CA59D91BC11830006829DB /* SpecialEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA59D71BC11830006829DB /* SpecialEventViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14CA59DA1BC11830006829DB /* SpecialEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CA59D81BC11830006829DB /* SpecialEventViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		14CA59F61BC11D58006829DB /* jiehun@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA59E31BC11D58006829DB /* jiehun@2x.jpg */; settings = {ASSET_TAGS = (); }; };
-		14CA59FA1BC11D58006829DB /* tegong@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA59E71BC11D58006829DB /* tegong@2x.jpg */; settings = {ASSET_TAGS = (); }; };
-		14CA59FC1BC11D58006829DB /* titans@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA59E91BC11D58006829DB /* titans@2x.jpg */; settings = {ASSET_TAGS = (); }; };
-		14CA5A001BC11D58006829DB /* zhanlang@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA59ED1BC11D58006829DB /* zhanlang@2x.jpg */; settings = {ASSET_TAGS = (); }; };
-		14CA5A011BC11D58006829DB /* zhuiai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA59EE1BC11D58006829DB /* zhuiai@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		14CA5A081BC15CE0006829DB /* gangjiong@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A021BC15CE0006829DB /* gangjiong@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		14CA5A091BC15CE0006829DB /* jiehun@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A031BC15CE0006829DB /* jiehun@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		14CA5A0A1BC15CE0006829DB /* tegong@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A041BC15CE0006829DB /* tegong@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		14CA5A0B1BC15CE0006829DB /* titans@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A051BC15CE0006829DB /* titans@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		14CA5A0C1BC15CE0006829DB /* zhanlang@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A061BC15CE0006829DB /* zhanlang@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		14CA5A0D1BC15CE0006829DB /* zhuiai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A071BC15CE0006829DB /* zhuiai@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 		1407AC271BC10915004A8644 /* Film1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Film1.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1407AC2B1BC10915004A8644 /* Film1_0UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Film1_0UITests.m; sourceTree = "<group>"; };
 		1407AC2D1BC10915004A8644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1407AC3A1BC10937004A8644 /* gangjiong@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "gangjiong@2x.jpg"; path = "../../../../Downloads/gangjiong@2x.jpg"; sourceTree = "<group>"; };
 		1407AC3D1BC109D4004A8644 /* OnSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnSaleViewController.h; sourceTree = "<group>"; };
 		1407AC3E1BC109D4004A8644 /* OnSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnSaleViewController.m; sourceTree = "<group>"; };
 		1407AC3F1BC109D4004A8644 /* OnSaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnSaleViewController.xib; sourceTree = "<group>"; };
@@ -73,11 +72,12 @@
 		14CA59D61BC11830006829DB /* SpecialEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialEventViewController.h; sourceTree = "<group>"; };
 		14CA59D71BC11830006829DB /* SpecialEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialEventViewController.m; sourceTree = "<group>"; };
 		14CA59D81BC11830006829DB /* SpecialEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecialEventViewController.xib; sourceTree = "<group>"; };
-		14CA59E31BC11D58006829DB /* jiehun@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "jiehun@2x.jpg"; path = "../../../image/jiehun@2x.jpg"; sourceTree = "<group>"; };
-		14CA59E71BC11D58006829DB /* tegong@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "tegong@2x.jpg"; path = "../../../image/tegong@2x.jpg"; sourceTree = "<group>"; };
-		14CA59E91BC11D58006829DB /* titans@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "titans@2x.jpg"; path = "../../../image/titans@2x.jpg"; sourceTree = "<group>"; };
-		14CA59ED1BC11D58006829DB /* zhanlang@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "zhanlang@2x.jpg"; path = "../../../image/zhanlang@2x.jpg"; sourceTree = "<group>"; };
-		14CA59EE1BC11D58006829DB /* zhuiai@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "zhuiai@2x.jpg"; path = "../../../image/zhuiai@2x.jpg"; sourceTree = "<group>"; };
+		14CA5A021BC15CE0006829DB /* gangjiong@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "gangjiong@2x.jpg"; path = "image/gangjiong@2x.jpg"; sourceTree = SOURCE_ROOT; };
+		14CA5A031BC15CE0006829DB /* jiehun@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "jiehun@2x.jpg"; path = "image/jiehun@2x.jpg"; sourceTree = SOURCE_ROOT; };
+		14CA5A041BC15CE0006829DB /* tegong@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "tegong@2x.jpg"; path = "image/tegong@2x.jpg"; sourceTree = SOURCE_ROOT; };
+		14CA5A051BC15CE0006829DB /* titans@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "titans@2x.jpg"; path = "image/titans@2x.jpg"; sourceTree = SOURCE_ROOT; };
+		14CA5A061BC15CE0006829DB /* zhanlang@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "zhanlang@2x.jpg"; path = "image/zhanlang@2x.jpg"; sourceTree = SOURCE_ROOT; };
+		14CA5A071BC15CE0006829DB /* zhuiai@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "zhuiai@2x.jpg"; path = "image/zhuiai@2x.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,12 +172,12 @@
 		1407AC391BC10928004A8644 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				1407AC3A1BC10937004A8644 /* gangjiong@2x.jpg */,
-				14CA59E31BC11D58006829DB /* jiehun@2x.jpg */,
-				14CA59E71BC11D58006829DB /* tegong@2x.jpg */,
-				14CA59E91BC11D58006829DB /* titans@2x.jpg */,
-				14CA59ED1BC11D58006829DB /* zhanlang@2x.jpg */,
-				14CA59EE1BC11D58006829DB /* zhuiai@2x.jpg */,
+				14CA5A021BC15CE0006829DB /* gangjiong@2x.jpg */,
+				14CA5A031BC15CE0006829DB /* jiehun@2x.jpg */,
+				14CA5A041BC15CE0006829DB /* tegong@2x.jpg */,
+				14CA5A051BC15CE0006829DB /* titans@2x.jpg */,
+				14CA5A061BC15CE0006829DB /* zhanlang@2x.jpg */,
+				14CA5A071BC15CE0006829DB /* zhuiai@2x.jpg */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -305,17 +305,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				14CA59DA1BC11830006829DB /* SpecialEventViewController.xib in Resources */,
+				14CA5A0C1BC15CE0006829DB /* zhanlang@2x.jpg in Resources */,
+				14CA5A0B1BC15CE0006829DB /* titans@2x.jpg in Resources */,
+				14CA5A0A1BC15CE0006829DB /* tegong@2x.jpg in Resources */,
+				14CA5A091BC15CE0006829DB /* jiehun@2x.jpg in Resources */,
 				14CA59D51BC112A9006829DB /* SoonOnViewController.xib in Resources */,
 				1407AC161BC10915004A8644 /* LaunchScreen.storyboard in Resources */,
-				1407AC3B1BC10937004A8644 /* gangjiong@2x.jpg in Resources */,
 				1407AC131BC10915004A8644 /* Assets.xcassets in Resources */,
-				14CA5A001BC11D58006829DB /* zhanlang@2x.jpg in Resources */,
-				14CA59FA1BC11D58006829DB /* tegong@2x.jpg in Resources */,
-				14CA59F61BC11D58006829DB /* jiehun@2x.jpg in Resources */,
-				14CA5A011BC11D58006829DB /* zhuiai@2x.jpg in Resources */,
+				14CA5A0D1BC15CE0006829DB /* zhuiai@2x.jpg in Resources */,
 				1407AC411BC109D4004A8644 /* OnSaleViewController.xib in Resources */,
-				14CA59FC1BC11D58006829DB /* titans@2x.jpg in Resources */,
 				1407AC111BC10915004A8644 /* Main.storyboard in Resources */,
+				14CA5A081BC15CE0006829DB /* gangjiong@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
