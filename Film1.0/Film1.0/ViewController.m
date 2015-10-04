@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor=[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1];
+    sv=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 400, 600)];
+    sv.contentSize=CGSizeMake(400, 2000);
+    [self.view addSubview:sv];
+    os=[[OnSaleViewController alloc]init];
+    os.view.frame=CGRectMake(7, 150, 360, 400);
+    [sv addSubview:os.view];
+    
 }
 
 - (void)didReceiveMemoryWarning {
