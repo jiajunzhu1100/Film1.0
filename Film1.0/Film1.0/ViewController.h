@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "OnSaleViewController.h"
+@interface ViewController : UIViewController{
+    UIScrollView *sv;
+    OnSaleViewController *os;
+}
 
 
 @end
