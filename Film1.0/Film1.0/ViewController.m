@@ -22,9 +22,14 @@
     sv.contentSize=CGSizeMake(400, 2000);
     [self.view addSubview:sv];
     os=[[OnSaleViewController alloc]init];
-    os.view.frame=CGRectMake(7, 150, 360, 400);
+    os.view.frame=CGRectMake(7, 150, 360, 420);
     [sv addSubview:os.view];
-    
+    so=[[SoonOnViewController alloc]init];
+    so.view.frame=CGRectMake(7, 580, 360, 210);
+    [sv addSubview:so.view];
+    se=[[SpecialEventViewController alloc]init];
+    se.view.frame=CGRectMake(7, 730, 360, 300);
+    [sv addSubview:se.view];
 }
 
 - (void)didReceiveMemoryWarning {
