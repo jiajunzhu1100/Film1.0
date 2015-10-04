@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "OnSaleViewController.h"
+#import "SoonOnViewController.h"
+#import "SpecialEventViewController.h"
 @interface ViewController : UIViewController{
     UIScrollView *sv;
     OnSaleViewController *os;
+    SoonOnViewController *so;
+    SpecialEventViewController *se;
 }
 
 
