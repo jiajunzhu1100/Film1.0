@@ -11,8 +11,9 @@
 #import "SoonOnViewController.h"
 #import "SpecialEventViewController.h"
 #import "UserInfoViewController.h"
+#import "DetailPageViewController.h"
 
-@interface ViewController : UIViewController<UserInfoViewControllerDelegate>{
+@interface ViewController : UIViewController<UserInfoViewControllerDelegate,OnSaleViewControllerDelegate>{
     UIScrollView *sv;
     
     OnSaleViewController *os;
@@ -20,7 +21,12 @@
     SpecialEventViewController *se;
     __weak IBOutlet UIButton *mBtnSearch;
     UserInfoViewController *mViewUserInfo;
+<<<<<<< HEAD
     UIButton *testSearch;
+=======
+    DetailPageViewController *dp;
+    
+>>>>>>> guo
 }
 -(IBAction)openSearchView:(id)sender;
 
