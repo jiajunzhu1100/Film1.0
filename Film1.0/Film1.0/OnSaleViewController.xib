@@ -217,7 +217,6 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-<<<<<<< HEAD
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="6UW-WF-Yi4"/>
@@ -244,10 +243,7 @@
                     <include reference="fkr-TS-8jS"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="341" y="332"/>
-=======
             <point key="canvasLocation" x="358" y="303"/>
->>>>>>> dev
         </view>
     </objects>
     <resources>
