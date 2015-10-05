@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -203,8 +203,8 @@
                         <rect key="frame" x="0.0" y="50" width="115" height="175"/>
                     </variation>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-TS-8jS">
-                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-TS-8jS">
+                    <rect key="frame" x="230" y="0.0" width="46" height="30"/>
                     <animations/>
                     <state key="normal" title="更多">
                         <color key="titleColor" red="1" green="0.54815924090000001" blue="0.1220849109" alpha="1" colorSpace="calibratedRGB"/>
@@ -217,32 +217,6 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="6UW-WF-Yi4"/>
-                    <exclude reference="21g-zg-Dn7"/>
-                    <exclude reference="bAc-rh-qtt"/>
-                    <exclude reference="hFL-pc-XB6"/>
-                    <exclude reference="3bl-Ft-OoB"/>
-                    <exclude reference="bls-iH-uNh"/>
-                    <exclude reference="f1A-KW-tgG"/>
-                    <exclude reference="3NN-ZU-i4Y"/>
-                    <exclude reference="fkr-TS-8jS"/>
-                </mask>
-            </variation>
-            <variation key="widthClass=compact">
-                <mask key="subviews">
-                    <include reference="6UW-WF-Yi4"/>
-                    <include reference="21g-zg-Dn7"/>
-                    <include reference="bAc-rh-qtt"/>
-                    <include reference="hFL-pc-XB6"/>
-                    <include reference="3bl-Ft-OoB"/>
-                    <include reference="bls-iH-uNh"/>
-                    <include reference="f1A-KW-tgG"/>
-                    <include reference="3NN-ZU-i4Y"/>
-                    <include reference="fkr-TS-8jS"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="358" y="303"/>
         </view>
     </objects>
