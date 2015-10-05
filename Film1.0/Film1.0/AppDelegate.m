@@ -18,6 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
+    UIWindow *window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[[UIViewController alloc]init]];
+    
+    [window addSubview:nav.view];
+    
+    window.rootViewController=nav;
+    [window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -10,6 +10,8 @@
 
 @interface DetailPageViewController : UIViewController{
     UIScrollView *sv;
+    IBOutlet UIView *view1;
+    IBOutlet UIView  *view2;
 }
 
 @end
