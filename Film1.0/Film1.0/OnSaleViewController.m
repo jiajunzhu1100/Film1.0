@@ -14,6 +14,10 @@
 
 @implementation OnSaleViewController
 
+
+#pragma mark - Lifecycle
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -24,6 +28,37 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+#pragma mark - Custom Accessors
+
+#pragma mark - IBActions
+
+
+
+
+#pragma mark - Public
+
+
+#pragma mark - Private
+
+
+#pragma mark - Protocol conformance
+
+#pragma mark - UITextFieldDelegate
+
+#pragma mark - UITableViewDataSource
+
+#pragma mark - UITableViewDelegate
+#pragma mark - NSCopying
+
+
+#pragma mark - NSObject
+
+
+
+
 
 /*
 #pragma mark - Navigation
