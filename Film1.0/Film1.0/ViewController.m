@@ -30,6 +30,7 @@
     se=[[SpecialEventViewController alloc]init];
     se.view.frame=CGRectMake(7, 730, 360, 300);
     [sv addSubview:se.view];
+    [self.view  bringSubviewToFront:mBtnSearch];
 }
 
 - (void)didReceiveMemoryWarning {

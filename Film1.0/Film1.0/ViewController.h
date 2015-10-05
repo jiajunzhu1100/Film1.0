@@ -12,9 +12,11 @@
 #import "SpecialEventViewController.h"
 @interface ViewController : UIViewController{
     UIScrollView *sv;
+    
     OnSaleViewController *os;
     SoonOnViewController *so;
     SpecialEventViewController *se;
+    __weak IBOutlet UIButton *mBtnSearch;
 }
 
 
