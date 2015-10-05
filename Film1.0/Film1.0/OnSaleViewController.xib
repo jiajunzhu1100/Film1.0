@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnSaleViewController">
             <connections>
+                <outlet property="more" destination="fkr-TS-8jS" id="NNc-U0-uIP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="view1" destination="bAc-rh-qtt" id="ZwV-6s-VdS"/>
                 <outlet property="view2" destination="f1A-KW-tgG" id="FgF-ka-ABd"/>
@@ -212,6 +213,9 @@
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="322" y="0.0" width="30" height="30"/>
                     </variation>
+                    <connections>
+                        <action selector="more:" destination="-1" eventType="touchUpInside" id="eCs-Ur-T66"/>
+                    </connections>
                 </button>
             </subviews>
             <animations/>

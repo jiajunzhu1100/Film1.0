@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface OnSaleViewController : UIViewController{
-    __weak IBOutlet UIView  *view1;
+#import "DetailPageViewController.h"
+@interface OnSaleViewController : UIViewController<UIGestureRecognizerDelegate>{
+    __strong IBOutlet UIView  *view1;
     __weak IBOutlet UIView  *view2;
     __weak IBOutlet UIView  *view3;
     __weak IBOutlet UIView  *view4;
     __weak IBOutlet UIView  *view5;
     __weak IBOutlet UIView  *view6;
 }
+@property (weak, nonatomic) IBOutlet UIButton *more;
 
 @end
