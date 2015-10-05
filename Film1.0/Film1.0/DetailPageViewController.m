@@ -41,6 +41,14 @@
     sv.contentSize=CGSizeMake(400, 2000);
     sv.showsVerticalScrollIndicator=NO;
     [self.view addSubview:sv];
+    view1=[[UIView alloc]initWithFrame:CGRectMake(0, 300, 400, 2000)];
+    view1.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+    [sv addSubview:view1];
+    view2=[[UIView alloc]initWithFrame:CGRectMake(0, 350, 400, 1950)];
+    view2.backgroundColor=[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1];
+    UILabel *filmType=[[UILabel alloc]initWithFrame:CGRectMake(150, 8, 20, 15)];
+    [filmType setText:@"喜剧"];
+    [view2 addSubview:filmType];
 }
 
 
