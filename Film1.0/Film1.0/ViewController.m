@@ -28,7 +28,7 @@
 -(void)setInitBackGound{
     
     self.view.backgroundColor=[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1];
-    sv=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 400, 600)];
+    sv=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 375, 667)];
     
     [self.view addSubview:sv];
     os=[[OnSaleViewController alloc]init];
@@ -52,7 +52,7 @@
 -(IBAction)openSearchView:(id)sender{
 //    [mViewUserInfo.view removeFromSuperview];
     mViewUserInfo=[[UserInfoViewController alloc]init];
-    mViewUserInfo.view.frame=CGRectMake(7, 0, 360, 600);
+    mViewUserInfo.view.frame=CGRectMake(0, 0, 375, 667);
 //    mViewUserInfo.delegate=self;
     [self.view addSubview:mViewUserInfo.view];
     

@@ -14,8 +14,9 @@
 -(void)backView;
 
 @end
-@interface UserInfoViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+@interface UserInfoViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
     __weak IBOutlet UIButton *mBtnSettingUserInfo;
+    __weak IBOutlet UIButton *mBtnSignin;
     __weak IBOutlet UIImageView *uImgTouxiang;
     __weak IBOutlet UIScrollView *mScrollScroll1;
     __weak IBOutlet UIScrollView *mScrollScroll2;
@@ -25,9 +26,9 @@
     __weak IBOutlet UIButton *mBtnGetBackPassport;
     __weak IBOutlet UIButton *mBtnFilmMates;
     
-    __weak IBOutlet UITableView *mTableUserInfoSetting;
+    __weak IBOutlet UITableView *tableUserInfoSetting;
 }
 @property(strong,nonatomic)id<UserInfoViewControllerDelegate>delegate;
-
+@property(strong,nonatomic)UIView *bgview;
 -(IBAction)tempBackView:(id)sender;
 @end
