@@ -31,21 +31,31 @@
     sv=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 375, 667)];
     
     [self.view addSubview:sv];
+    
     os=[[OnSaleViewController alloc]init];
-    os.view.frame=CGRectMake(7, 150, 360, 420);
+    os.view.frame=CGRectMake(0, 150, 375, 420);
     [sv addSubview:os.view];
     so=[[SoonOnViewController alloc]init];
-    so.view.frame=CGRectMake(7, 580, 360, 210);
+    so.view.frame=CGRectMake(0, 580, 375, 210);
     [sv addSubview:so.view];
     se=[[SpecialEventViewController alloc]init];
-    se.view.frame=CGRectMake(7, 730, 360, 300);
+    se.view.frame=CGRectMake(0, 730, 375, 300);
     [sv addSubview:se.view];
-    [self.view  bringSubviewToFront:mBtnSearch];
+    
     CGFloat toButtomView=se.view.layer.frame.origin.y+se.view.layer.frame.size.height;
-    sv.contentSize=CGSizeMake(400, toButtomView+50);
+    sv.contentSize=CGSizeMake(375, toButtomView+50);
+    
+    self.navigationController.navigationBarHidden=YES;
+    
+    testSearch=[[UIButton alloc]initWithFrame:CGRectMake(0, 40, 40, 40)];
+    [testSearch addTarget:self action:@selector(openSearchView:) forControlEvents:UIControlEventTouchUpInside];
+    [testSearch setImage:[UIImage imageNamed:@"fangdajing.jpg"] forState:UIControlStateNormal];
+    [self.view addSubview:testSearch];
+    [self.view bringSubviewToFront:testSearch];
     
     
     
+//    [self.view  bringSubviewToFront:mBtnSearch];
 }
 
 #pragma mark - IBActions
