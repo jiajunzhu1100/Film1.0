@@ -17,11 +17,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="360" height="420"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UW-WF-Yi4">
-                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UW-WF-Yi4">
+                    <rect key="frame" x="8" y="8" width="7" height="15"/>
                     <animations/>
                     <color key="backgroundColor" red="1" green="0.54815924090000001" blue="0.1220849109" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -31,8 +31,8 @@
                         <rect key="frame" x="8" y="8" width="7" height="15"/>
                     </variation>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在销售" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21g-zg-Dn7">
-                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正在销售" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21g-zg-Dn7">
+                    <rect key="frame" x="23" y="5" width="68" height="21"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,18 +41,18 @@
                         <rect key="frame" x="23" y="5" width="68" height="21"/>
                     </variation>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-rh-qtt">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFL-pc-XB6">
+                    <rect key="frame" x="0.0" y="245" width="115" height="175"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="W5g-01-zF9">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ixg-YF-Q03">
+                            <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             <animations/>
                             <variation key="widthClass=compact" fixedFrame="YES">
                                 <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             </variation>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dY-l0-lKL">
-                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRz-NI-yGj">
+                            <rect key="frame" x="0.0" y="148" width="115" height="21"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,69 +64,22 @@
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <variation key="default">
-                        <mask key="subviews">
-                            <exclude reference="W5g-01-zF9"/>
-                            <exclude reference="4dY-l0-lKL"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="0.0" y="50" width="115" height="175"/>
-                        <mask key="subviews">
-                            <include reference="W5g-01-zF9"/>
-                            <include reference="4dY-l0-lKL"/>
-                        </mask>
-                    </variation>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFL-pc-XB6">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ixg-YF-Q03">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            <animations/>
-                            <variation key="widthClass=compact" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
-                            </variation>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRz-NI-yGj">
-                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                            <animations/>
-                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                            <variation key="widthClass=compact" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="148" width="115" height="21"/>
-                            </variation>
-                        </label>
-                    </subviews>
-                    <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <variation key="default">
-                        <mask key="subviews">
-                            <exclude reference="ixg-YF-Q03"/>
-                            <exclude reference="zRz-NI-yGj"/>
-                        </mask>
-                    </variation>
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="0.0" y="245" width="115" height="175"/>
-                        <mask key="subviews">
-                            <include reference="ixg-YF-Q03"/>
-                            <include reference="zRz-NI-yGj"/>
-                        </mask>
                     </variation>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bl-Ft-OoB">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bl-Ft-OoB">
+                    <rect key="frame" x="125" y="245" width="115" height="175"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-45-O8x">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-45-O8x">
+                            <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             <animations/>
                             <variation key="widthClass=compact" fixedFrame="YES">
                                 <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             </variation>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g7-WK-bDQ">
-                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g7-WK-bDQ">
+                            <rect key="frame" x="0.0" y="148" width="115" height="21"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -138,32 +91,22 @@
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <variation key="default">
-                        <mask key="subviews">
-                            <exclude reference="IQr-45-O8x"/>
-                            <exclude reference="6g7-WK-bDQ"/>
-                        </mask>
-                    </variation>
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="125" y="245" width="115" height="175"/>
-                        <mask key="subviews">
-                            <include reference="IQr-45-O8x"/>
-                            <include reference="6g7-WK-bDQ"/>
-                        </mask>
                     </variation>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bls-iH-uNh">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bls-iH-uNh">
+                    <rect key="frame" x="245" y="245" width="115" height="175"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lSx-0K-Rru">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lSx-0K-Rru">
+                            <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             <animations/>
                             <variation key="widthClass=compact" fixedFrame="YES">
                                 <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             </variation>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zt-xG-fJE">
-                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zt-xG-fJE">
+                            <rect key="frame" x="0.0" y="148" width="115" height="21"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -175,32 +118,22 @@
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <variation key="default">
-                        <mask key="subviews">
-                            <exclude reference="lSx-0K-Rru"/>
-                            <exclude reference="1Zt-xG-fJE"/>
-                        </mask>
-                    </variation>
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="245" y="245" width="115" height="175"/>
-                        <mask key="subviews">
-                            <include reference="lSx-0K-Rru"/>
-                            <include reference="1Zt-xG-fJE"/>
-                        </mask>
                     </variation>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1A-KW-tgG">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1A-KW-tgG">
+                    <rect key="frame" x="123" y="50" width="115" height="175"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cN4-JF-4u5">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cN4-JF-4u5">
+                            <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             <animations/>
                             <variation key="widthClass=compact" fixedFrame="YES">
                                 <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             </variation>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXO-co-HuM">
-                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXO-co-HuM">
+                            <rect key="frame" x="0.0" y="148" width="115" height="21"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -212,32 +145,22 @@
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <variation key="default">
-                        <mask key="subviews">
-                            <exclude reference="cN4-JF-4u5"/>
-                            <exclude reference="oXO-co-HuM"/>
-                        </mask>
-                    </variation>
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="123" y="50" width="115" height="175"/>
-                        <mask key="subviews">
-                            <include reference="cN4-JF-4u5"/>
-                            <include reference="oXO-co-HuM"/>
-                        </mask>
                     </variation>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-ZU-i4Y">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-ZU-i4Y">
+                    <rect key="frame" x="246" y="50" width="115" height="175"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OvA-7A-31m">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OvA-7A-31m">
+                            <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             <animations/>
                             <variation key="widthClass=compact" fixedFrame="YES">
                                 <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
                             </variation>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26x-hM-gri">
-                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26x-hM-gri">
+                            <rect key="frame" x="0.0" y="148" width="115" height="21"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -249,49 +172,42 @@
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <variation key="default">
-                        <mask key="subviews">
-                            <exclude reference="OvA-7A-31m"/>
-                            <exclude reference="26x-hM-gri"/>
-                        </mask>
-                    </variation>
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="246" y="50" width="115" height="175"/>
-                        <mask key="subviews">
-                            <include reference="OvA-7A-31m"/>
-                            <include reference="26x-hM-gri"/>
-                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-rh-qtt">
+                    <rect key="frame" x="0.0" y="50" width="115" height="175"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gangjiong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="W5g-01-zF9">
+                            <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
+                            <animations/>
+                            <variation key="widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="140"/>
+                            </variation>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="港囧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dY-l0-lKL">
+                            <rect key="frame" x="0.0" y="148" width="115" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="148" width="115" height="21"/>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="50" width="115" height="175"/>
                     </variation>
                 </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="6UW-WF-Yi4"/>
-                    <exclude reference="21g-zg-Dn7"/>
-                    <exclude reference="bAc-rh-qtt"/>
-                    <exclude reference="hFL-pc-XB6"/>
-                    <exclude reference="3bl-Ft-OoB"/>
-                    <exclude reference="bls-iH-uNh"/>
-                    <exclude reference="f1A-KW-tgG"/>
-                    <exclude reference="3NN-ZU-i4Y"/>
-                </mask>
-            </variation>
-            <variation key="widthClass=compact">
-                <mask key="subviews">
-                    <include reference="6UW-WF-Yi4"/>
-                    <include reference="21g-zg-Dn7"/>
-                    <include reference="bAc-rh-qtt"/>
-                    <include reference="hFL-pc-XB6"/>
-                    <include reference="3bl-Ft-OoB"/>
-                    <include reference="bls-iH-uNh"/>
-                    <include reference="f1A-KW-tgG"/>
-                    <include reference="3NN-ZU-i4Y"/>
-                </mask>
-            </variation>
-            <point key="canvasLocation" x="438" y="379"/>
+            <point key="canvasLocation" x="358" y="303"/>
         </view>
     </objects>
     <resources>
