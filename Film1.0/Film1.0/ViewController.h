@@ -10,15 +10,18 @@
 #import "OnSaleViewController.h"
 #import "SoonOnViewController.h"
 #import "SpecialEventViewController.h"
-@interface ViewController : UIViewController{
+#import "UserInfoViewController.h"
+
+@interface ViewController : UIViewController<UserInfoViewControllerDelegate>{
     UIScrollView *sv;
     
     OnSaleViewController *os;
     SoonOnViewController *so;
     SpecialEventViewController *se;
     __weak IBOutlet UIButton *mBtnSearch;
+    UserInfoViewController *mViewUserInfo;
 }
-
+-(IBAction)openSearchView:(id)sender;
 
 @end
 

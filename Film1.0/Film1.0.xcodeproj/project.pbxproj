@@ -29,7 +29,17 @@
 		14CA5A0D1BC15CE0006829DB /* zhuiai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A071BC15CE0006829DB /* zhuiai@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA5A111BC24DB9006829DB /* DetailPageViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14CA5A141BC24DB9006829DB /* DetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CD91BC2639000817C29 /* touxiang2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CD81BC2639000817C29 /* touxiang2@2x.png */; settings = {ASSET_TAGS = (); }; };
 		1C960C7A1BC25A2F000D4311 /* fangdajing@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		1CADB65F1BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1CADB6601BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1CADB6611BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1CADB6621BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		1CADB6631BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		1CADB6641BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		1CADB66A1BC2603700E7FEC4 /* chilun2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */; settings = {ASSET_TAGS = (); }; };
+		1CADB66B1BC2603700E7FEC4 /* chilun2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */; settings = {ASSET_TAGS = (); }; };
+		1CADB66C1BC2603700E7FEC4 /* chilun2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +94,12 @@
 		14CA5A101BC24DB9006829DB /* DetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPageViewController.h; sourceTree = "<group>"; };
 		14CA5A111BC24DB9006829DB /* DetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPageViewController.m; sourceTree = "<group>"; };
 		14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPageViewController.xib; sourceTree = "<group>"; };
+		1C8E8CD81BC2639000817C29 /* touxiang2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touxiang2@2x.png"; sourceTree = "<group>"; };
 		1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fangdajing@2x.jpg"; sourceTree = "<group>"; };
+		1CADB65C1BC25F4300E7FEC4 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
+		1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chilun2@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +150,7 @@
 		1407AC051BC10915004A8644 /* Film1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				1CADB65B1BC25EFD00E7FEC4 /* UserInfo */,
 				14CA5A0F1BC24D51006829DB /* DetailPage */,
 				1407AC3C1BC10942004A8644 /* HomePage */,
 				1407AC091BC10915004A8644 /* AppDelegate.h */,
@@ -180,6 +196,8 @@
 		1407AC391BC10928004A8644 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				1C8E8CD81BC2639000817C29 /* touxiang2@2x.png */,
+				1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */,
 				1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */,
 				14CA5A021BC15CE0006829DB /* gangjiong@2x.jpg */,
 				14CA5A031BC15CE0006829DB /* jiehun@2x.jpg */,
@@ -215,6 +233,16 @@
 				14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */,
 			);
 			name = DetailPage;
+			sourceTree = "<group>";
+		};
+		1CADB65B1BC25EFD00E7FEC4 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1CADB65C1BC25F4300E7FEC4 /* UserInfoViewController.h */,
+				1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */,
+				1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */,
+			);
+			name = UserInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,8 +354,10 @@
 				14CA59DA1BC11830006829DB /* SpecialEventViewController.xib in Resources */,
 				14CA5A0C1BC15CE0006829DB /* zhanlang@2x.jpg in Resources */,
 				1C960C7A1BC25A2F000D4311 /* fangdajing@2x.jpg in Resources */,
+				1CADB66A1BC2603700E7FEC4 /* chilun2@2x.png in Resources */,
 				14CA5A0B1BC15CE0006829DB /* titans@2x.jpg in Resources */,
 				14CA5A0A1BC15CE0006829DB /* tegong@2x.jpg in Resources */,
+				1C8E8CD91BC2639000817C29 /* touxiang2@2x.png in Resources */,
 				14CA5A091BC15CE0006829DB /* jiehun@2x.jpg in Resources */,
 				14CA59D51BC112A9006829DB /* SoonOnViewController.xib in Resources */,
 				1407AC161BC10915004A8644 /* LaunchScreen.storyboard in Resources */,
@@ -335,6 +365,7 @@
 				14CA5A0D1BC15CE0006829DB /* zhuiai@2x.jpg in Resources */,
 				1407AC411BC109D4004A8644 /* OnSaleViewController.xib in Resources */,
 				1407AC111BC10915004A8644 /* Main.storyboard in Resources */,
+				1CADB6621BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */,
 				14CA5A141BC24DB9006829DB /* DetailPageViewController.xib in Resources */,
 				14CA5A081BC15CE0006829DB /* gangjiong@2x.jpg in Resources */,
 			);
@@ -344,6 +375,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CADB6631BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */,
+				1CADB66B1BC2603700E7FEC4 /* chilun2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +384,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CADB6641BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */,
+				1CADB66C1BC2603700E7FEC4 /* chilun2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +401,7 @@
 				1407AC401BC109D4004A8644 /* OnSaleViewController.m in Sources */,
 				14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */,
 				1407AC081BC10915004A8644 /* main.m in Sources */,
+				1CADB65F1BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */,
 				14CA59D41BC112A9006829DB /* SoonOnViewController.m in Sources */,
 				14CA59D91BC11830006829DB /* SpecialEventViewController.m in Sources */,
 			);
@@ -376,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1407AC211BC10915004A8644 /* Film1_0Tests.m in Sources */,
+				1CADB6601BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1407AC2C1BC10915004A8644 /* Film1_0UITests.m in Sources */,
+				1CADB6611BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
