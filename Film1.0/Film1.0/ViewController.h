@@ -20,6 +20,7 @@
     SpecialEventViewController *se;
     __weak IBOutlet UIButton *mBtnSearch;
     UserInfoViewController *mViewUserInfo;
+    UIButton *testSearch;
 }
 -(IBAction)openSearchView:(id)sender;
 

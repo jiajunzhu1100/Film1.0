@@ -69,28 +69,25 @@
     NSMutableArray *imageArray=[[NSMutableArray alloc]initWithArray:@[img1,img2,img3,img4,img5,img6]];
     for (int i=0; i<imageArray.count; i++) {
         [mScrollScroll1 addSubview:imageArray[i]];
-//        [mScrollScroll2 addSubview:imageArray[i]];
-//        [mScrollScroll3 addSubview:imageArray[i]];
+
     }
     
-    NSMutableArray *temp2=[NSMutableArray arrayWithArray:imageArray];
-    for (int i=0; i<temp2.count; i++) {
-        [mScrollScroll2 addSubview:temp2[i]];
-        //        [mScrollScroll2 addSubview:imageArray[i]];
-        //        [mScrollScroll3 addSubview:imageArray[i]];
-    }
+//    NSMutableArray *temp2=[NSMutableArray arrayWithArray:imageArray];
+//    for (int i=0; i<temp2.count; i++) {
+//        [mScrollScroll2 addSubview:temp2[i]];
+//  
+//    }
 //    NSMutableArray *temp3=[NSMutableArray arrayWithArray:imageArray];
 //    for (int i=0; i<temp3.count; i++) {
 //        [mScrollScroll3 addSubview:temp3[i]];
-//        //        [mScrollScroll2 addSubview:imageArray[i]];
-//        //        [mScrollScroll3 addSubview:imageArray[i]];
+
 //    }
     
 
     
     [mScrollScroll1 setContentSize:CGSizeMake(720, 66)];
-    [mScrollScroll2 setContentSize:CGSizeMake(720, 66)];
-    [mScrollScroll2 setContentOffset:CGPointMake(120, 0) animated:NO];
+//    [mScrollScroll2 setContentSize:CGSizeMake(720, 66)];
+//    [mScrollScroll2 setContentOffset:CGPointMake(120, 0) animated:NO];
 //    [mScrollScroll3 setContentSize:CGSizeMake(720, 66)];
 //    [mScrollScroll3 setContentOffset:CGPointMake(240, 0) animated:NO];
 
@@ -122,15 +119,20 @@
     mScrollScroll1.contentOffset=point;
     mScrollScroll2.contentOffset=point;
     mScrollScroll3.contentOffset=point;
-    if (mScrollScroll1.contentOffset.x==360) {
-        [mScrollScroll1 scrollRectToVisible:CGRectMake(0, 0, 120, 66) animated:NO];
-    }else if(mScrollScroll2.contentOffset.x==360){
-        [mScrollScroll2 scrollRectToVisible:CGRectMake(0, 0, 120, 66) animated:NO];
-
-    }else if (mScrollScroll3.contentOffset.x==360){
-        [mScrollScroll3 scrollRectToVisible:CGRectMake(0, 0, 120, 66) animated:NO];
-
+    
+    NSLog(@"test x:%f",mScrollScroll1.contentOffset.x);
+    
+    if (mScrollScroll1.contentOffset.x == 0) {
+        // 用户滑动到1号位置，此时必须跳转到倒二的位置
+        [mScrollScroll1 scrollRectToVisible:CGRectMake(480,0,120,66) animated:NO];
     }
+    else if (mScrollScroll1.contentOffset.x == 370) {
+        // 用户滑动到最后的位置，此时必须跳转到2号位置
+        [mScrollScroll1 scrollRectToVisible:CGRectMake(120, 0, 120, 66) animated:NO];
+    }
+    
+    
+
 }
 
 #pragma mark - Protocol conformance
@@ -172,11 +174,15 @@
     
 }
 #pragma mark -UIScrollViewDelegate
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    if (scrollView.contentOffset.x==330) {
-        [scrollView setContentOffset:CGPointMake(66, 0)animated:NO];
-    }else if (scrollView.contentOffset.x==0){
-        [scrollView setContentOffset:CGPointMake(264, 0)animated:NO];
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    if (scrollView.contentOffset.x == 0) {
+        // 用户滑动到1号位置，此时必须跳转到倒二的位置
+        [scrollView scrollRectToVisible:CGRectMake(480,0,120,66) animated:NO];
+    }
+    else if (scrollView.contentOffset.x == 600) {
+        // 用户滑动到最后的位置，此时必须跳转到2号位置
+        [scrollView scrollRectToVisible:CGRectMake(120, 0, 120, 66) animated:NO];
     }
 }
 #pragma mark - NSCopying
