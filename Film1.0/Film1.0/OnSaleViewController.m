@@ -37,16 +37,25 @@
     UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleGesture:)];
     tap.numberOfTapsRequired=1;
     [view1 addGestureRecognizer:tap];
+    dp=[[DetailPageViewController alloc]init];
 }
 -(void)handleGesture:(UIGestureRecognizer *)gesture{
     NSLog(@"yeah!");
-    DetailPageViewController *dp=[[DetailPageViewController alloc]init];
-    [self.navigationController pushViewController:dp animated:YES];
+    
+//    
+//    [self.parentViewController.navigationController pushViewController:dp animated:YES];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(openSubview)]) {
+        [self.delegate openSubview];
+    }
+    
 }
 #pragma mark - IBActions
 - (IBAction)more:(UIButton *)sender {
-    DetailPageViewController *dp=[[DetailPageViewController alloc]init];
-    [self presentViewController:dp animated:YES completion:nil];
+//    [self.parentViewController.navigationController pushViewController:dp animated:YES];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(openSubview)]) {
+        [self.delegate openSubview];
+    }
+
 }
 
 
