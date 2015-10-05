@@ -243,6 +243,15 @@
                         </mask>
                     </variation>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-TS-8jS">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="更多">
+                        <color key="titleColor" red="1" green="0.54815924090000001" blue="0.1220849109" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="322" y="0.0" width="30" height="30"/>
+                    </variation>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -256,6 +265,7 @@
                     <exclude reference="bls-iH-uNh"/>
                     <exclude reference="f1A-KW-tgG"/>
                     <exclude reference="3NN-ZU-i4Y"/>
+                    <exclude reference="fkr-TS-8jS"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -268,6 +278,7 @@
                     <include reference="bls-iH-uNh"/>
                     <include reference="f1A-KW-tgG"/>
                     <include reference="3NN-ZU-i4Y"/>
+                    <include reference="fkr-TS-8jS"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="438" y="379"/>
