@@ -203,6 +203,16 @@
                         <rect key="frame" x="0.0" y="50" width="115" height="175"/>
                     </variation>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-TS-8jS">
+                    <rect key="frame" x="230" y="0.0" width="46" height="30"/>
+                    <animations/>
+                    <state key="normal" title="更多">
+                        <color key="titleColor" red="1" green="0.54815924090000001" blue="0.1220849109" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="322" y="0.0" width="30" height="30"/>
+                    </variation>
+                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

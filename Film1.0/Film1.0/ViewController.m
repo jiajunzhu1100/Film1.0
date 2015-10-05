@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-
+#pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -30,6 +30,7 @@
     se=[[SpecialEventViewController alloc]init];
     se.view.frame=CGRectMake(7, 730, 360, 300);
     [sv addSubview:se.view];
+    [self.view  bringSubviewToFront:mBtnSearch];
 }
 
 - (void)didReceiveMemoryWarning {

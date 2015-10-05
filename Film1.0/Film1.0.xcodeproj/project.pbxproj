@@ -27,6 +27,9 @@
 		14CA5A0B1BC15CE0006829DB /* titans@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A051BC15CE0006829DB /* titans@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		14CA5A0C1BC15CE0006829DB /* zhanlang@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A061BC15CE0006829DB /* zhanlang@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		14CA5A0D1BC15CE0006829DB /* zhuiai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A071BC15CE0006829DB /* zhuiai@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA5A111BC24DB9006829DB /* DetailPageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		14CA5A141BC24DB9006829DB /* DetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		1C960C7A1BC25A2F000D4311 /* fangdajing@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,10 @@
 		14CA5A051BC15CE0006829DB /* titans@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "titans@2x.jpg"; path = "image/titans@2x.jpg"; sourceTree = SOURCE_ROOT; };
 		14CA5A061BC15CE0006829DB /* zhanlang@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "zhanlang@2x.jpg"; path = "image/zhanlang@2x.jpg"; sourceTree = SOURCE_ROOT; };
 		14CA5A071BC15CE0006829DB /* zhuiai@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "zhuiai@2x.jpg"; path = "image/zhuiai@2x.jpg"; sourceTree = SOURCE_ROOT; };
+		14CA5A101BC24DB9006829DB /* DetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPageViewController.h; sourceTree = "<group>"; };
+		14CA5A111BC24DB9006829DB /* DetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPageViewController.m; sourceTree = "<group>"; };
+		14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPageViewController.xib; sourceTree = "<group>"; };
+		1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fangdajing@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +135,7 @@
 		1407AC051BC10915004A8644 /* Film1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				14CA5A0F1BC24D51006829DB /* DetailPage */,
 				1407AC3C1BC10942004A8644 /* HomePage */,
 				1407AC091BC10915004A8644 /* AppDelegate.h */,
 				1407AC0A1BC10915004A8644 /* AppDelegate.m */,
@@ -172,6 +180,7 @@
 		1407AC391BC10928004A8644 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */,
 				14CA5A021BC15CE0006829DB /* gangjiong@2x.jpg */,
 				14CA5A031BC15CE0006829DB /* jiehun@2x.jpg */,
 				14CA5A041BC15CE0006829DB /* tegong@2x.jpg */,
@@ -196,6 +205,16 @@
 				14CA59D81BC11830006829DB /* SpecialEventViewController.xib */,
 			);
 			name = HomePage;
+			sourceTree = "<group>";
+		};
+		14CA5A0F1BC24D51006829DB /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				14CA5A101BC24DB9006829DB /* DetailPageViewController.h */,
+				14CA5A111BC24DB9006829DB /* DetailPageViewController.m */,
+				14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */,
+			);
+			name = DetailPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +325,7 @@
 			files = (
 				14CA59DA1BC11830006829DB /* SpecialEventViewController.xib in Resources */,
 				14CA5A0C1BC15CE0006829DB /* zhanlang@2x.jpg in Resources */,
+				1C960C7A1BC25A2F000D4311 /* fangdajing@2x.jpg in Resources */,
 				14CA5A0B1BC15CE0006829DB /* titans@2x.jpg in Resources */,
 				14CA5A0A1BC15CE0006829DB /* tegong@2x.jpg in Resources */,
 				14CA5A091BC15CE0006829DB /* jiehun@2x.jpg in Resources */,
@@ -315,6 +335,7 @@
 				14CA5A0D1BC15CE0006829DB /* zhuiai@2x.jpg in Resources */,
 				1407AC411BC109D4004A8644 /* OnSaleViewController.xib in Resources */,
 				1407AC111BC10915004A8644 /* Main.storyboard in Resources */,
+				14CA5A141BC24DB9006829DB /* DetailPageViewController.xib in Resources */,
 				14CA5A081BC15CE0006829DB /* gangjiong@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +364,7 @@
 				1407AC0E1BC10915004A8644 /* ViewController.m in Sources */,
 				1407AC0B1BC10915004A8644 /* AppDelegate.m in Sources */,
 				1407AC401BC109D4004A8644 /* OnSaleViewController.m in Sources */,
+				14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */,
 				1407AC081BC10915004A8644 /* main.m in Sources */,
 				14CA59D41BC112A9006829DB /* SoonOnViewController.m in Sources */,
 				14CA59D91BC11830006829DB /* SpecialEventViewController.m in Sources */,
