@@ -21,12 +21,12 @@
     SpecialEventViewController *se;
     __weak IBOutlet UIButton *mBtnSearch;
     UserInfoViewController *mViewUserInfo;
-<<<<<<< HEAD
+
     UIButton *testSearch;
-=======
+
     DetailPageViewController *dp;
     
->>>>>>> guo
+
 }
 -(IBAction)openSearchView:(id)sender;
 
