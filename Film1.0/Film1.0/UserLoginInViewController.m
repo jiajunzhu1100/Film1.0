@@ -41,13 +41,25 @@
     gwlPNG.layer.masksToBounds=YES;
     gwlPNG.layer.cornerRadius=12;
     
-    //init txtField
+    //init mbtn
+    mBtnLogin.layer.borderWidth=1;
+    mBtnLogin.layer.borderColor=[[UIColor blackColor] CGColor];
+    
     
     
 }
 #pragma mark - IBActions
 - (IBAction)backView:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)nowLoginIn:(id)sender {
+}
+
+- (IBAction)forgetPassword:(id)sender {
+}
+
+- (IBAction)nowLogin:(id)sender {
 }
 
 #pragma mark - Public

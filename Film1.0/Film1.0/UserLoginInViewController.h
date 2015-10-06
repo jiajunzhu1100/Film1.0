@@ -18,7 +18,13 @@
     __weak  IBOutlet UIView *txtBgView2;
     __weak IBOutlet UITextField *txtUser;
      __weak IBOutlet UITextField *txtPassport;
+    __weak IBOutlet UIButton *mBtnForgetPassword;
+    __weak IBOutlet UIButton *mBtnLoginIn;
+    __weak IBOutlet UIButton *mBtnLogin;
 }
 - (IBAction)backView:(id)sender;
+- (IBAction)nowLoginIn:(id)sender;
+- (IBAction)forgetPassword:(id)sender;
+- (IBAction)nowLogin:(id)sender;
 
 @end
