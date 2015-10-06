@@ -10,9 +10,11 @@
 
 @interface DetailPageViewController : UIViewController<UIScrollViewDelegate>{
     UIScrollView *sv;
+    UIScrollView *sv2;
     IBOutlet UIView *view1;
     IBOutlet UIView  *view2;
     UITabBar *tool;
+    NSMutableArray *imgArray;
 }
 
 @end
