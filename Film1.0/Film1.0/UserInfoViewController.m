@@ -20,6 +20,8 @@
     [self setInitAccssors];
     [self initScrollView];
     [self initSignIn];
+    [self init2Scrollview];
+    [self init3ScrollView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,34 +74,59 @@
 
     }
     
-//    NSMutableArray *temp2=[NSMutableArray arrayWithArray:imageArray];
-//    for (int i=0; i<temp2.count; i++) {
-//        [mScrollScroll2 addSubview:temp2[i]];
-//  
-//    }
-//    NSMutableArray *temp3=[NSMutableArray arrayWithArray:imageArray];
-//    for (int i=0; i<temp3.count; i++) {
-//        [mScrollScroll3 addSubview:temp3[i]];
-
-//    }
-    
-
-    
     [mScrollScroll1 setContentSize:CGSizeMake(720, 66)];
-//    [mScrollScroll2 setContentSize:CGSizeMake(720, 66)];
-//    [mScrollScroll2 setContentOffset:CGPointMake(120, 0) animated:NO];
-//    [mScrollScroll3 setContentSize:CGSizeMake(720, 66)];
-//    [mScrollScroll3 setContentOffset:CGPointMake(240, 0) animated:NO];
+
 
     
     [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(scrollViewScroll:) userInfo:nil repeats:YES];
+}
+
+-(void)init2Scrollview{
+    UIImageView *img1=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 120,66)];
+    img1.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img2=[[UIImageView alloc]initWithFrame:CGRectMake(120, 0, 120, 66)];
+    img2.image=[UIImage imageNamed:@"jiehun@2x.jpg"];
+    UIImageView *img3=[[UIImageView alloc]initWithFrame:CGRectMake(240, 0, 120, 66)];
+    img3.image=[UIImage imageNamed:@"tegong@2x.jpg"];
+    UIImageView *img4=[[UIImageView alloc]initWithFrame:CGRectMake(360, 0, 120, 66)];
+    img4.image=[UIImage imageNamed:@"titans@2x.jpg"];
+    UIImageView *img5=[[UIImageView alloc]initWithFrame:CGRectMake(480, 0, 120, 66)];
+    img5.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img6=[[UIImageView alloc]initWithFrame:CGRectMake(600, 0, 120, 66)];
+    img6.image=[UIImage imageNamed:@"jiehun@2x.jpg"];
+    NSMutableArray *imageArray=[[NSMutableArray alloc]initWithArray:@[img1,img2,img3,img4,img5,img6]];
+    for (int i=0; i<imageArray.count; i++) {
+        [mScrollScroll2 addSubview:imageArray[i]];
+        
+    }
+    [mScrollScroll2 setContentSize:CGSizeMake(720, 66)];
+    [mScrollScroll2 setContentOffset:CGPointMake(60, 0) animated:NO];
+    [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(scrollViewScroll2:) userInfo:nil repeats:YES];
     
+
     
+}
+-(void)init3ScrollView{
+    UIImageView *img1=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 120,66)];
+    img1.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img2=[[UIImageView alloc]initWithFrame:CGRectMake(120, 0, 120, 66)];
+    img2.image=[UIImage imageNamed:@"jiehun@2x.jpg"];
+    UIImageView *img3=[[UIImageView alloc]initWithFrame:CGRectMake(240, 0, 120, 66)];
+    img3.image=[UIImage imageNamed:@"tegong@2x.jpg"];
+    UIImageView *img4=[[UIImageView alloc]initWithFrame:CGRectMake(360, 0, 120, 66)];
+    img4.image=[UIImage imageNamed:@"titans@2x.jpg"];
+    UIImageView *img5=[[UIImageView alloc]initWithFrame:CGRectMake(480, 0, 120, 66)];
+    img5.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img6=[[UIImageView alloc]initWithFrame:CGRectMake(600, 0, 120, 66)];
+    img6.image=[UIImage imageNamed:@"jiehun@2x.jpg"];
+    NSMutableArray *imageArray=[[NSMutableArray alloc]initWithArray:@[img1,img2,img3,img4,img5,img6]];
+    for (int i=0; i<imageArray.count; i++) {
+        [mScrollScroll3 addSubview:imageArray[i]];
+        
+    }
+    [mScrollScroll3 setContentSize:CGSizeMake(720, 66)];
     
-    
-    
-    
-    
+    [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(scrollViewScroll3:) userInfo:nil repeats:YES];
 }
 #pragma mark - IBActions
 
@@ -108,7 +135,11 @@
         [self.delegate backView];
     }
 }
-
+-(IBAction)loginIn:(id)sender{
+    userLoginView=[[UserLoginInViewController alloc]init];
+    [self.view.window.rootViewController presentViewController:userLoginView animated:YES completion:nil];
+    
+}
 
 #pragma mark - Public
 
@@ -117,24 +148,59 @@
 -(void)scrollViewScroll:(NSTimer *)timer{
     CGPoint point=CGPointMake(mScrollScroll1.contentOffset.x+0.5, mScrollScroll1.contentOffset.y);
     mScrollScroll1.contentOffset=point;
-    mScrollScroll2.contentOffset=point;
-    mScrollScroll3.contentOffset=point;
+
     
-    NSLog(@"test x:%f",mScrollScroll1.contentOffset.x);
+    
     
     if (mScrollScroll1.contentOffset.x == 0) {
-        // 用户滑动到1号位置，此时必须跳转到倒二的位置
+        
         [mScrollScroll1 scrollRectToVisible:CGRectMake(480,0,120,66) animated:NO];
     }
-    else if (mScrollScroll1.contentOffset.x == 370) {
-        // 用户滑动到最后的位置，此时必须跳转到2号位置
+    else if (mScrollScroll1.contentOffset.x == 340) {
+        
         [mScrollScroll1 scrollRectToVisible:CGRectMake(120, 0, 120, 66) animated:NO];
     }
     
     
 
 }
+-(void)scrollViewScroll2:(NSTimer *)timer{
+    CGPoint point=CGPointMake(mScrollScroll2.contentOffset.x-0.5, mScrollScroll2.contentOffset.y);
 
+    mScrollScroll2.contentOffset=point;
+
+    
+
+    
+    if (mScrollScroll2.contentOffset.x == 0) {
+        
+        [mScrollScroll2 scrollRectToVisible:CGRectMake(480,0,120,66) animated:NO];
+    }
+    else if (mScrollScroll2.contentOffset.x == 340) {
+        
+        [mScrollScroll2 scrollRectToVisible:CGRectMake(120, 0, 120, 66) animated:NO];
+    }
+    
+    
+    
+}
+-(void)scrollViewScroll3:(NSTimer *)timer{
+    CGPoint point=CGPointMake(mScrollScroll3.contentOffset.x+0.5, mScrollScroll2.contentOffset.y);
+    
+    mScrollScroll3.contentOffset=point;
+    
+    
+    
+    
+    if (mScrollScroll3.contentOffset.x == 0) {
+        
+        [mScrollScroll3 scrollRectToVisible:CGRectMake(480,0,120,66) animated:NO];
+    }
+    else if (mScrollScroll3.contentOffset.x == 340) {
+        
+        [mScrollScroll3 scrollRectToVisible:CGRectMake(120, 0, 120, 66) animated:NO];
+    }
+}
 #pragma mark - Protocol conformance
 
 #pragma mark - UITextFieldDelegate

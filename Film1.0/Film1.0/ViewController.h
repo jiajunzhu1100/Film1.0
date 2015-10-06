@@ -13,6 +13,7 @@
 #import "UserInfoViewController.h"
 #import "DetailPageViewController.h"
 
+
 @interface ViewController : UIViewController<UserInfoViewControllerDelegate,OnSaleViewControllerDelegate>{
     UIScrollView *sv;
     

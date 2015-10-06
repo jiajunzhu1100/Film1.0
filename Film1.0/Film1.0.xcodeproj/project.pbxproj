@@ -30,6 +30,14 @@
 		14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA5A111BC24DB9006829DB /* DetailPageViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14CA5A141BC24DB9006829DB /* DetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		1C8E8CD91BC2639000817C29 /* touxiang2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CD81BC2639000817C29 /* touxiang2@2x.png */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CDD1BC35B4C00817C29 /* chilun2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CDC1BC35B4C00817C29 /* chilun2@2x.png */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CE11BC35C2A00817C29 /* UserLoginInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E8CDF1BC35C2A00817C29 /* UserLoginInViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CE21BC35C2A00817C29 /* UserLoginInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CE01BC35C2A00817C29 /* UserLoginInViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CE51BC35D9900817C29 /* 1212@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CE31BC35D9900817C29 /* 1212@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CE61BC35D9900817C29 /* 2323@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CE41BC35D9900817C29 /* 2323@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CE81BC35DD200817C29 /* 3434@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CE71BC35DD200817C29 /* 3434@2x.png */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CEB1BC36BE900817C29 /* passport@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CE91BC36BE900817C29 /* passport@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CEC1BC36BE900817C29 /* touxiangdenglu@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CEA1BC36BE900817C29 /* touxiangdenglu@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		1C960C7A1BC25A2F000D4311 /* fangdajing@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		1CADB65F1BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1CADB6601BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -37,9 +45,6 @@
 		1CADB6621BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		1CADB6631BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		1CADB6641BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		1CADB66A1BC2603700E7FEC4 /* chilun2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */; settings = {ASSET_TAGS = (); }; };
-		1CADB66B1BC2603700E7FEC4 /* chilun2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */; settings = {ASSET_TAGS = (); }; };
-		1CADB66C1BC2603700E7FEC4 /* chilun2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,11 +100,19 @@
 		14CA5A111BC24DB9006829DB /* DetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPageViewController.m; sourceTree = "<group>"; };
 		14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPageViewController.xib; sourceTree = "<group>"; };
 		1C8E8CD81BC2639000817C29 /* touxiang2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touxiang2@2x.png"; sourceTree = "<group>"; };
+		1C8E8CDC1BC35B4C00817C29 /* chilun2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chilun2@2x.png"; sourceTree = "<group>"; };
+		1C8E8CDE1BC35C2A00817C29 /* UserLoginInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginInViewController.h; sourceTree = "<group>"; };
+		1C8E8CDF1BC35C2A00817C29 /* UserLoginInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginInViewController.m; sourceTree = "<group>"; };
+		1C8E8CE01BC35C2A00817C29 /* UserLoginInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserLoginInViewController.xib; sourceTree = "<group>"; };
+		1C8E8CE31BC35D9900817C29 /* 1212@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1212@2x.jpg"; sourceTree = "<group>"; };
+		1C8E8CE41BC35D9900817C29 /* 2323@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2323@2x.jpg"; sourceTree = "<group>"; };
+		1C8E8CE71BC35DD200817C29 /* 3434@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3434@2x.png"; sourceTree = "<group>"; };
+		1C8E8CE91BC36BE900817C29 /* passport@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "passport@2x.jpg"; sourceTree = "<group>"; };
+		1C8E8CEA1BC36BE900817C29 /* touxiangdenglu@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "touxiangdenglu@2x.jpg"; sourceTree = "<group>"; };
 		1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fangdajing@2x.jpg"; sourceTree = "<group>"; };
 		1CADB65C1BC25F4300E7FEC4 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
-		1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chilun2@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +209,13 @@
 		1407AC391BC10928004A8644 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				1C8E8CE91BC36BE900817C29 /* passport@2x.jpg */,
+				1C8E8CEA1BC36BE900817C29 /* touxiangdenglu@2x.jpg */,
+				1C8E8CE71BC35DD200817C29 /* 3434@2x.png */,
+				1C8E8CE31BC35D9900817C29 /* 1212@2x.jpg */,
+				1C8E8CE41BC35D9900817C29 /* 2323@2x.jpg */,
+				1C8E8CDC1BC35B4C00817C29 /* chilun2@2x.png */,
 				1C8E8CD81BC2639000817C29 /* touxiang2@2x.png */,
-				1CADB6691BC2603700E7FEC4 /* chilun2@2x.png */,
 				1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */,
 				14CA5A021BC15CE0006829DB /* gangjiong@2x.jpg */,
 				14CA5A031BC15CE0006829DB /* jiehun@2x.jpg */,
@@ -241,6 +259,9 @@
 				1CADB65C1BC25F4300E7FEC4 /* UserInfoViewController.h */,
 				1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */,
 				1CADB65E1BC25F4300E7FEC4 /* UserInfoViewController.xib */,
+				1C8E8CDE1BC35C2A00817C29 /* UserLoginInViewController.h */,
+				1C8E8CDF1BC35C2A00817C29 /* UserLoginInViewController.m */,
+				1C8E8CE01BC35C2A00817C29 /* UserLoginInViewController.xib */,
 			);
 			name = UserInfo;
 			sourceTree = "<group>";
@@ -351,14 +372,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8E8CE21BC35C2A00817C29 /* UserLoginInViewController.xib in Resources */,
 				14CA59DA1BC11830006829DB /* SpecialEventViewController.xib in Resources */,
 				14CA5A0C1BC15CE0006829DB /* zhanlang@2x.jpg in Resources */,
 				1C960C7A1BC25A2F000D4311 /* fangdajing@2x.jpg in Resources */,
-				1CADB66A1BC2603700E7FEC4 /* chilun2@2x.png in Resources */,
 				14CA5A0B1BC15CE0006829DB /* titans@2x.jpg in Resources */,
+				1C8E8CE51BC35D9900817C29 /* 1212@2x.jpg in Resources */,
 				14CA5A0A1BC15CE0006829DB /* tegong@2x.jpg in Resources */,
+				1C8E8CEC1BC36BE900817C29 /* touxiangdenglu@2x.jpg in Resources */,
 				1C8E8CD91BC2639000817C29 /* touxiang2@2x.png in Resources */,
 				14CA5A091BC15CE0006829DB /* jiehun@2x.jpg in Resources */,
+				1C8E8CE81BC35DD200817C29 /* 3434@2x.png in Resources */,
 				14CA59D51BC112A9006829DB /* SoonOnViewController.xib in Resources */,
 				1407AC161BC10915004A8644 /* LaunchScreen.storyboard in Resources */,
 				1407AC131BC10915004A8644 /* Assets.xcassets in Resources */,
@@ -366,8 +390,11 @@
 				1407AC411BC109D4004A8644 /* OnSaleViewController.xib in Resources */,
 				1407AC111BC10915004A8644 /* Main.storyboard in Resources */,
 				1CADB6621BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */,
+				1C8E8CDD1BC35B4C00817C29 /* chilun2@2x.png in Resources */,
+				1C8E8CE61BC35D9900817C29 /* 2323@2x.jpg in Resources */,
 				14CA5A141BC24DB9006829DB /* DetailPageViewController.xib in Resources */,
 				14CA5A081BC15CE0006829DB /* gangjiong@2x.jpg in Resources */,
+				1C8E8CEB1BC36BE900817C29 /* passport@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CADB6631BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */,
-				1CADB66B1BC2603700E7FEC4 /* chilun2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +411,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CADB6641BC25F4300E7FEC4 /* UserInfoViewController.xib in Resources */,
-				1CADB66C1BC2603700E7FEC4 /* chilun2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +426,7 @@
 				1407AC401BC109D4004A8644 /* OnSaleViewController.m in Sources */,
 				14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */,
 				1407AC081BC10915004A8644 /* main.m in Sources */,
+				1C8E8CE11BC35C2A00817C29 /* UserLoginInViewController.m in Sources */,
 				1CADB65F1BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */,
 				14CA59D41BC112A9006829DB /* SoonOnViewController.m in Sources */,
 				14CA59D91BC11830006829DB /* SpecialEventViewController.m in Sources */,
