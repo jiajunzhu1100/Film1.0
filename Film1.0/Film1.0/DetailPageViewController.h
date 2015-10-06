@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DetailPageImageViewController.h"
 @interface DetailPageViewController : UIViewController<UIScrollViewDelegate>{
     UIScrollView *sv;
     UIScrollView *sv2;
     IBOutlet UIView *view1;
     IBOutlet UIView  *view2;
+    __weak IBOutlet UIButton *upDown;
     UITabBar *tool;
     NSMutableArray *imgArray;
+    DetailPageImageViewController *dpi;
 }
 
 @end
