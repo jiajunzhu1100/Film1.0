@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailPageViewController : UIViewController{
+@interface DetailPageViewController : UIViewController<UIScrollViewDelegate>{
     UIScrollView *sv;
     IBOutlet UIView *view1;
     IBOutlet UIView  *view2;
+    UITabBar *tool;
 }
 
 @end

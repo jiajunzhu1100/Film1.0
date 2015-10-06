@@ -33,7 +33,8 @@
     [self.view addSubview:sv];
     
     os=[[OnSaleViewController alloc]init];
-    os.view.frame=CGRectMake(0, 150, 375, 420);
+    os.delegate=self;
+    os.view.frame=CGRectMake(7, 150, 360, 420);
     [sv addSubview:os.view];
     so=[[SoonOnViewController alloc]init];
     so.view.frame=CGRectMake(0, 580, 375, 210);
@@ -43,6 +44,7 @@
     [sv addSubview:se.view];
     
     CGFloat toButtomView=se.view.layer.frame.origin.y+se.view.layer.frame.size.height;
+
     sv.contentSize=CGSizeMake(375, toButtomView+50);
     
     self.navigationController.navigationBarHidden=YES;
@@ -53,11 +55,18 @@
     [self.view addSubview:testSearch];
     [self.view bringSubviewToFront:testSearch];
     
+    dp=[[DetailPageViewController alloc]init];
+    [dp.view setFrame:CGRectMake(0, 0, 400, 600)];
+    //self.navigationController.navigationBarHidden=YES;
+    self.navigationItem.backBarButtonItem.title=@"xueba";
+
     
     
 //    [self.view  bringSubviewToFront:mBtnSearch];
 }
-
+-(void)openSubview{
+    [self.navigationController pushViewController:dp animated:YES];
+}
 #pragma mark - IBActions
 -(IBAction)openSearchView:(id)sender{
 //    [mViewUserInfo.view removeFromSuperview];
