@@ -44,9 +44,22 @@
     //init mbtn
     mBtnLogin.layer.borderWidth=1;
     mBtnLogin.layer.borderColor=[[UIColor blackColor] CGColor];
+    mBtnLoginGet.layer.borderWidth=mBtnSignInGetBack.layer.borderWidth=mBtnSignIn.layer.borderWidth=mBtnGetBackPassport.layer.borderWidth=1;
+    mBtnLoginGet.layer.borderColor=mBtnSignInGetBack.layer.borderColor=mBtnSignIn.layer.borderColor=mBtnGetBackPassport.layer.borderColor=[[UIColor colorWithRed:120/255.0 green:129/255.0 blue:149/255.0 alpha:1] CGColor];
+    mBtnLoginGet.layer.cornerRadius=mBtnSignInGetBack.layer.cornerRadius=mBtnSignIn.layer.cornerRadius=mBtnGetBackPassport.layer.cornerRadius=4;
+   
     
     
+    //init scrollview
+    [mScrollBase setContentSize:CGSizeMake(1125, 358)];
+    [mScrollBase setContentOffset:CGPointMake(375, 0) animated:NO];
     
+    //init label
+//    NSMutableAttributedString *tempString=[[NSMutableAttributedString alloc]initWithString:mLabNotisification.text];
+//    [tempString addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:NSMakeRange(7, 13)];
+//    [tempString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier-BoldOblique" size:18.0] range:NSMakeRange(7, 13)];
+//    mLabNotisification.attributedText=tempString;
+//    
 }
 #pragma mark - IBActions
 - (IBAction)backView:(id)sender {
@@ -54,12 +67,18 @@
 }
 
 - (IBAction)nowLoginIn:(id)sender {
+    [mScrollBase setContentOffset:CGPointMake(750, 0) animated:YES];
 }
 
 - (IBAction)forgetPassword:(id)sender {
+    [mScrollBase setContentOffset:CGPointMake(0, 0) animated:YES];
 }
 
 - (IBAction)nowLogin:(id)sender {
+}
+
+- (IBAction)backLogin:(id)sender {
+    [mScrollBase setContentOffset:CGPointMake(375, 0) animated:YES];
 }
 
 #pragma mark - Public
