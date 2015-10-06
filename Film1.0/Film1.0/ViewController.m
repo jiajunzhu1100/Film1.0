@@ -72,7 +72,7 @@
 //    [mViewUserInfo.view removeFromSuperview];
     mViewUserInfo=[[UserInfoViewController alloc]init];
     mViewUserInfo.view.frame=CGRectMake(0, 0, 375, 667);
-//    mViewUserInfo.delegate=self;
+    mViewUserInfo.delegate=self;
     [self.view addSubview:mViewUserInfo.view];
     
     
@@ -97,6 +97,7 @@
 -(void)backView{
     [mViewUserInfo.view removeFromSuperview];
 }
+
 #pragma mark - NSCopying
 
 
