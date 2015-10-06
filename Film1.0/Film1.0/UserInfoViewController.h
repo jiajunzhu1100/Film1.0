@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserLoginInViewController.h"
+
+
 @class UserInfoViewController;
 @protocol UserInfoViewControllerDelegate <NSObject>
 
 @optional
 -(void)backView;
+-(void)openLoginView;
 
 @end
 @interface UserInfoViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
@@ -27,8 +31,11 @@
     __weak IBOutlet UIButton *mBtnFilmMates;
     
     __weak IBOutlet UITableView *tableUserInfoSetting;
+    
+    UserLoginInViewController *userLoginView;
 }
 @property(strong,nonatomic)id<UserInfoViewControllerDelegate>delegate;
 @property(strong,nonatomic)UIView *bgview;
 -(IBAction)tempBackView:(id)sender;
+-(IBAction)loginIn:(id)sender;
 @end
