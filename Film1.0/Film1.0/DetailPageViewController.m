@@ -41,7 +41,7 @@
     
     
     sv.showsVerticalScrollIndicator=YES;
-    sv.backgroundColor=[UIColor grayColor];
+    sv.backgroundColor=[UIColor clearColor];
     sv.delegate=self;
     
     view1=[[UIView alloc]initWithFrame:CGRectMake(0, 300, 400, 2000)];
@@ -108,6 +108,10 @@
     sv2.contentSize=CGSizeMake(tBView+50, 75);
     sv2.showsHorizontalScrollIndicator=NO;
     [view2 addSubview:sv2];
+    dpi=[[DetailPageImageViewController alloc]init];
+    dpi.view.frame=CGRectMake(0, 0, 400, 600);
+    [sv addSubview:dpi.view];
+    [sv bringSubviewToFront:view1];
 }
 
 
