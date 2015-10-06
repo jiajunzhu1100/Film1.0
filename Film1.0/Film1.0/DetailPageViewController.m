@@ -38,11 +38,12 @@
 #pragma mark - Custom Accessors
 -(void)initial{
     sv=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 400, 600)];
-    sv.contentSize=CGSizeMake(400, 2000);
+    
+    
     sv.showsVerticalScrollIndicator=YES;
     sv.backgroundColor=[UIColor grayColor];
     sv.delegate=self;
-    [self.view addSubview:sv];
+    
     view1=[[UIView alloc]initWithFrame:CGRectMake(0, 300, 400, 2000)];
     view1.backgroundColor=[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:0];
     [sv addSubview:view1];
@@ -52,6 +53,9 @@
     filmName.textColor=[UIColor whiteColor];
     [view1 addSubview:filmName];
     view2=[[UIView alloc]initWithFrame:CGRectMake(0, 50, 400, 1950)];
+    CGFloat toButtomView=view2.layer.frame.origin.y+view2.layer.frame.size.height;
+    sv.contentSize=CGSizeMake(400, toButtomView+50);
+    [self.view addSubview:sv];
     view2.backgroundColor=[UIColor whiteColor];
     [view1 addSubview:view2];
     UILabel *filmType=[[UILabel alloc]initWithFrame:CGRectMake(150, 8, 50, 40)];
@@ -79,9 +83,31 @@
     tool=[[UITabBar alloc]initWithFrame:CGRectMake(0, 619, 400, 30)];
     tool.backgroundColor=[UIColor redColor];
     [self.view addSubview:tool];
-    UITabBarItem *item1=[[UITabBarItem alloc]initWithTitle:@"1" image:[UIImage imageNamed:@"touxiang2.png"] tag:1];
     
-    [tool setItems:@[item1]];
+    //Actor and Director List
+    sv2=[[UIScrollView alloc]initWithFrame:CGRectMake(20, 150, 300, 75)];
+    
+    UIImageView *img1=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    img1.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img2=[[UIImageView alloc]initWithFrame:CGRectMake(75, 0, 50, 50)];
+    img2.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img3=[[UIImageView alloc]initWithFrame:CGRectMake(150, 0, 50, 50)];
+    img3.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img4=[[UIImageView alloc]initWithFrame:CGRectMake(225, 0, 50, 50)];
+    img4.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img5=[[UIImageView alloc]initWithFrame:CGRectMake(300, 0, 50, 50)];
+    img5.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    UIImageView *img6=[[UIImageView alloc]initWithFrame:CGRectMake(375, 0, 50, 50)];
+    img6.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+//    [sv2 addSubview:img1];
+    imgArray=[[NSMutableArray alloc]initWithArray:@[img1,img2,img3,img4,img5,img6]];
+    for (int i=0; i<imgArray.count; i++) {
+        [sv2 addSubview:imgArray[i]];
+    }
+    CGFloat tBView=img6.layer.frame.origin.x+img6.layer.frame.size.width;
+    sv2.contentSize=CGSizeMake(tBView+50, 75);
+    sv2.showsHorizontalScrollIndicator=NO;
+    [view2 addSubview:sv2];
 }
 
 
