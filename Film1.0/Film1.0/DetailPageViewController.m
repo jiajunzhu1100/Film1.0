@@ -51,6 +51,7 @@
     filmName.text=@"港囧";
     filmName.textAlignment=1;
     filmName.textColor=[UIColor whiteColor];
+    filmName.backgroundColor=[UIColor clearColor];
     [view1 addSubview:filmName];
     view2=[[UIView alloc]initWithFrame:CGRectMake(0, 50, 400, 1950)];
     CGFloat toButtomView=view2.layer.frame.origin.y+view2.layer.frame.size.height;
@@ -112,11 +113,19 @@
     dpi.view.frame=CGRectMake(0, 0, 400, 600);
     [sv addSubview:dpi.view];
     [sv bringSubviewToFront:view1];
+    UIButton *upDown=[[UIButton alloc]initWithFrame:CGRectMake(250, 56, 50, 40)];
+    [upDown setTitle:@"HAHA" forState:UIControlStateNormal];
+    UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(downGesture:)];
+    [upDown addGestureRecognizer:tap];
+    [view2 addSubview:upDown];
 }
 
 
 #pragma mark - IBActions
-
+-(void)downGesture:(UIGestureRecognizer *)gesture{
+    NSLog(@"hello!");
+    [view1 removeFromSuperview];
+}
 
 
 
