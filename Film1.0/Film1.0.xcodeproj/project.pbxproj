@@ -31,6 +31,8 @@
 		14CA5A0D1BC15CE0006829DB /* zhuiai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A071BC15CE0006829DB /* zhuiai@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA5A111BC24DB9006829DB /* DetailPageViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14CA5A141BC24DB9006829DB /* DetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		14F21D851BC55AAF001D7301 /* DetailtoCinemaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F21D831BC55AAF001D7301 /* DetailtoCinemaViewController.m */; settings = {ASSET_TAGS = (); }; };
+		14F21D861BC55AAF001D7301 /* DetailtoCinemaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F21D841BC55AAF001D7301 /* DetailtoCinemaViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		1C8E8CD91BC2639000817C29 /* touxiang2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CD81BC2639000817C29 /* touxiang2@2x.png */; settings = {ASSET_TAGS = (); }; };
 		1C8E8CDD1BC35B4C00817C29 /* chilun2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CDC1BC35B4C00817C29 /* chilun2@2x.png */; settings = {ASSET_TAGS = (); }; };
 		1C8E8CE11BC35C2A00817C29 /* UserLoginInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E8CDF1BC35C2A00817C29 /* UserLoginInViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -106,6 +108,9 @@
 		14CA5A101BC24DB9006829DB /* DetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPageViewController.h; sourceTree = "<group>"; };
 		14CA5A111BC24DB9006829DB /* DetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPageViewController.m; sourceTree = "<group>"; };
 		14CA5A121BC24DB9006829DB /* DetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPageViewController.xib; sourceTree = "<group>"; };
+		14F21D821BC55AAF001D7301 /* DetailtoCinemaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailtoCinemaViewController.h; sourceTree = "<group>"; };
+		14F21D831BC55AAF001D7301 /* DetailtoCinemaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailtoCinemaViewController.m; sourceTree = "<group>"; };
+		14F21D841BC55AAF001D7301 /* DetailtoCinemaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailtoCinemaViewController.xib; sourceTree = "<group>"; };
 		1C8E8CD81BC2639000817C29 /* touxiang2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touxiang2@2x.png"; sourceTree = "<group>"; };
 		1C8E8CDC1BC35B4C00817C29 /* chilun2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chilun2@2x.png"; sourceTree = "<group>"; };
 		1C8E8CDE1BC35C2A00817C29 /* UserLoginInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginInViewController.h; sourceTree = "<group>"; };
@@ -173,6 +178,7 @@
 		1407AC051BC10915004A8644 /* Film1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				14F21D811BC55A86001D7301 /* DetailtoCinema */,
 				1CADB65B1BC25EFD00E7FEC4 /* UserInfo */,
 				14CA5A0F1BC24D51006829DB /* DetailPage */,
 				1407AC3C1BC10942004A8644 /* HomePage */,
@@ -264,6 +270,16 @@
 				142F9D151BC40C6100A60E77 /* DetailPageImageViewController.xib */,
 			);
 			name = DetailPage;
+			sourceTree = "<group>";
+		};
+		14F21D811BC55A86001D7301 /* DetailtoCinema */ = {
+			isa = PBXGroup;
+			children = (
+				14F21D821BC55AAF001D7301 /* DetailtoCinemaViewController.h */,
+				14F21D831BC55AAF001D7301 /* DetailtoCinemaViewController.m */,
+				14F21D841BC55AAF001D7301 /* DetailtoCinemaViewController.xib */,
+			);
+			name = DetailtoCinema;
 			sourceTree = "<group>";
 		};
 		1CADB65B1BC25EFD00E7FEC4 /* UserInfo */ = {
@@ -402,6 +418,7 @@
 				1C8E8CE81BC35DD200817C29 /* 3434@2x.png in Resources */,
 				14CA59D51BC112A9006829DB /* SoonOnViewController.xib in Resources */,
 				142F9D171BC40C6100A60E77 /* DetailPageImageViewController.xib in Resources */,
+				14F21D861BC55AAF001D7301 /* DetailtoCinemaViewController.xib in Resources */,
 				1407AC161BC10915004A8644 /* LaunchScreen.storyboard in Resources */,
 				1407AC131BC10915004A8644 /* Assets.xcassets in Resources */,
 				14CA5A0D1BC15CE0006829DB /* zhuiai@2x.jpg in Resources */,
@@ -446,6 +463,7 @@
 				14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */,
 				1407AC081BC10915004A8644 /* main.m in Sources */,
 				1C8E8CE11BC35C2A00817C29 /* UserLoginInViewController.m in Sources */,
+				14F21D851BC55AAF001D7301 /* DetailtoCinemaViewController.m in Sources */,
 				142F9D161BC40C6100A60E77 /* DetailPageImageViewController.m in Sources */,
 				1CADB65F1BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */,
 				14CA59D41BC112A9006829DB /* SoonOnViewController.m in Sources */,
