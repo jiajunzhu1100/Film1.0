@@ -40,6 +40,8 @@
 		1C8E8CE81BC35DD200817C29 /* 3434@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CE71BC35DD200817C29 /* 3434@2x.png */; settings = {ASSET_TAGS = (); }; };
 		1C8E8CEB1BC36BE900817C29 /* passport@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CE91BC36BE900817C29 /* passport@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		1C8E8CEC1BC36BE900817C29 /* touxiangdenglu@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CEA1BC36BE900817C29 /* touxiangdenglu@2x.jpg */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CF01BC5010800817C29 /* DingdanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E8CEE1BC5010800817C29 /* DingdanViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1C8E8CF11BC5010800817C29 /* DingdanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E8CEF1BC5010800817C29 /* DingdanViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		1C960C7A1BC25A2F000D4311 /* fangdajing@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		1CADB65F1BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1CADB6601BC25F4300E7FEC4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -114,6 +116,9 @@
 		1C8E8CE71BC35DD200817C29 /* 3434@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3434@2x.png"; sourceTree = "<group>"; };
 		1C8E8CE91BC36BE900817C29 /* passport@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "passport@2x.jpg"; sourceTree = "<group>"; };
 		1C8E8CEA1BC36BE900817C29 /* touxiangdenglu@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "touxiangdenglu@2x.jpg"; sourceTree = "<group>"; };
+		1C8E8CED1BC5010800817C29 /* DingdanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DingdanViewController.h; sourceTree = "<group>"; };
+		1C8E8CEE1BC5010800817C29 /* DingdanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DingdanViewController.m; sourceTree = "<group>"; };
+		1C8E8CEF1BC5010800817C29 /* DingdanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DingdanViewController.xib; sourceTree = "<group>"; };
 		1C960C791BC25A2F000D4311 /* fangdajing@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fangdajing@2x.jpg"; sourceTree = "<group>"; };
 		1CADB65C1BC25F4300E7FEC4 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		1CADB65D1BC25F4300E7FEC4 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
@@ -270,6 +275,9 @@
 				1C8E8CDE1BC35C2A00817C29 /* UserLoginInViewController.h */,
 				1C8E8CDF1BC35C2A00817C29 /* UserLoginInViewController.m */,
 				1C8E8CE01BC35C2A00817C29 /* UserLoginInViewController.xib */,
+				1C8E8CED1BC5010800817C29 /* DingdanViewController.h */,
+				1C8E8CEE1BC5010800817C29 /* DingdanViewController.m */,
+				1C8E8CEF1BC5010800817C29 /* DingdanViewController.xib */,
 			);
 			name = UserInfo;
 			sourceTree = "<group>";
@@ -390,6 +398,7 @@
 				1C8E8CEC1BC36BE900817C29 /* touxiangdenglu@2x.jpg in Resources */,
 				1C8E8CD91BC2639000817C29 /* touxiang2@2x.png in Resources */,
 				14CA5A091BC15CE0006829DB /* jiehun@2x.jpg in Resources */,
+				1C8E8CF11BC5010800817C29 /* DingdanViewController.xib in Resources */,
 				1C8E8CE81BC35DD200817C29 /* 3434@2x.png in Resources */,
 				14CA59D51BC112A9006829DB /* SoonOnViewController.xib in Resources */,
 				142F9D171BC40C6100A60E77 /* DetailPageImageViewController.xib in Resources */,
@@ -433,6 +442,7 @@
 				1407AC0E1BC10915004A8644 /* ViewController.m in Sources */,
 				1407AC0B1BC10915004A8644 /* AppDelegate.m in Sources */,
 				1407AC401BC109D4004A8644 /* OnSaleViewController.m in Sources */,
+				1C8E8CF01BC5010800817C29 /* DingdanViewController.m in Sources */,
 				14CA5A131BC24DB9006829DB /* DetailPageViewController.m in Sources */,
 				1407AC081BC10915004A8644 /* main.m in Sources */,
 				1C8E8CE11BC35C2A00817C29 /* UserLoginInViewController.m in Sources */,

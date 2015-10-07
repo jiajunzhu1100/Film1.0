@@ -12,7 +12,7 @@
 #import "SpecialEventViewController.h"
 #import "UserInfoViewController.h"
 #import "DetailPageViewController.h"
-
+#import "DingdanViewController.h"
 
 @interface ViewController : UIViewController<UserInfoViewControllerDelegate,OnSaleViewControllerDelegate>{
     UIScrollView *sv;
@@ -26,7 +26,7 @@
     UIButton *testSearch;
 
     DetailPageViewController *dp;
-    
+    DingdanViewController *dingDan;
 
 }
 -(IBAction)openSearchView:(id)sender;
