@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UserLoginInViewController.h"
-
+#import "DingdanViewController.h";
 
 @class UserInfoViewController;
 @protocol UserInfoViewControllerDelegate <NSObject>
@@ -16,6 +16,7 @@
 @optional
 -(void)backView;
 -(void)openLoginView;
+-(void)openDingdan;
 
 @end
 @interface UserInfoViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
@@ -33,9 +34,11 @@
     __weak IBOutlet UITableView *tableUserInfoSetting;
     
     UserLoginInViewController *userLoginView;
+    DingdanViewController *dingDanView;
 }
 @property(strong,nonatomic)id<UserInfoViewControllerDelegate>delegate;
 @property(strong,nonatomic)UIView *bgview;
 -(IBAction)tempBackView:(id)sender;
 -(IBAction)loginIn:(id)sender;
+-(IBAction)openDingdan:(id)sender;
 @end
