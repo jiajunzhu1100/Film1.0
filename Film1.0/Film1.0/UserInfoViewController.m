@@ -140,7 +140,15 @@
     [self.view.window.rootViewController presentViewController:userLoginView animated:YES completion:nil];
     
 }
-
+-(IBAction)openDingdan:(id)sender{
+//    dingDanView=[[DingdanViewController alloc]init];
+//    [self.view.window.rootViewController.navigationController pushViewController:dingDanView animated:YES];
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(openDingdan)]) {
+        [self.delegate openDingdan];
+    }
+    
+}
 #pragma mark - Public
 
 

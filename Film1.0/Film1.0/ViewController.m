@@ -67,6 +67,10 @@
 -(void)openSubview{
     [self.navigationController pushViewController:dp animated:YES];
 }
+-(void)openDingdan{
+    dingDan=[[DingdanViewController alloc]init];
+    [self.navigationController pushViewController:dingDan animated:YES];
+}
 #pragma mark - IBActions
 -(IBAction)openSearchView:(id)sender{
 //    [mViewUserInfo.view removeFromSuperview];
