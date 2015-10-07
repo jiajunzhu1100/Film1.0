@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UserLoginInViewController.h"
-#import "DingdanViewController.h";
+#import "DingdanViewController.h"
 
 @class UserInfoViewController;
 @protocol UserInfoViewControllerDelegate <NSObject>
