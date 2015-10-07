@@ -48,7 +48,7 @@
     UIImageView *img5=[[UIImageView alloc]initWithFrame:CGRectMake(0, 300, 133, 80)];
     img5.image=[UIImage imageNamed:@"titans@2x.jpg"];
     UIImageView *img6=[[UIImageView alloc]initWithFrame:CGRectMake(133, 300, 134, 80)];
-    img6.image=[UIImage imageNamed:@"zhalang@2x.jpg"];
+    img6.image=[UIImage imageNamed:@"zhanlang@2x.jpg"];
     UIImageView *img7=[[UIImageView alloc]initWithFrame:CGRectMake(267, 300, 400, 80)];
     img7.image=[UIImage imageNamed:@"zhuiai@2x.jpg"];
     UIImageView *img8=[[UIImageView alloc]initWithFrame:CGRectMake(0, 380, 200, 120)];
