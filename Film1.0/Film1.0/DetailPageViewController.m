@@ -44,9 +44,10 @@
     sv.backgroundColor=[UIColor clearColor];
     sv.delegate=self;
     
-    view1=[[UIView alloc]initWithFrame:CGRectMake(0, 300, 400, 2000)];
+    
+    view1=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 400, 2000)];
     view1.backgroundColor=[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:0];
-    [sv addSubview:view1];
+    
     UILabel *filmName=[[UILabel alloc]initWithFrame:CGRectMake(150, 0, 50, 40)];
     filmName.text=@"港囧";
     filmName.textAlignment=1;
@@ -81,9 +82,6 @@
     filmSource.layer.borderColor=[[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1] CGColor];
     [view2 addSubview:filmSource];
     //self.navigationController.toolbarHidden=NO;
-    tool=[[UITabBar alloc]initWithFrame:CGRectMake(0, 619, 400, 30)];
-    tool.backgroundColor=[UIColor redColor];
-    [self.view addSubview:tool];
     
     //Actor and Director List
     sv2=[[UIScrollView alloc]initWithFrame:CGRectMake(20, 150, 300, 75)];
@@ -109,24 +107,51 @@
     sv2.contentSize=CGSizeMake(tBView+50, 75);
     sv2.showsHorizontalScrollIndicator=NO;
     [view2 addSubview:sv2];
+    //DetailPageImageView
     dpi=[[DetailPageImageViewController alloc]init];
     dpi.view.frame=CGRectMake(0, 0, 400, 600);
     [sv addSubview:dpi.view];
     [sv bringSubviewToFront:view1];
-    UIButton *upDown=[[UIButton alloc]initWithFrame:CGRectMake(250, 56, 50, 40)];
-    [upDown setTitle:@"HAHA" forState:UIControlStateNormal];
+    //UpDown Button
+    UIButton *updown=[[UIButton alloc]initWithFrame:CGRectMake(250, -31, 50, 40)];
+    updown.layer.borderWidth=1;
+    updown.layer.borderColor=[[UIColor redColor]CGColor];
+    [updown setTitle:@"HAHA" forState:UIControlStateNormal];
     UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(downGesture:)];
-    [upDown addGestureRecognizer:tap];
-    [view2 addSubview:upDown];
+    [updown addGestureRecognizer:tap];
+    [view1 addSubview:updown];
+    sv1=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 300, 400, 600)];
+    sv1.showsVerticalScrollIndicator=NO;
+    sv1.backgroundColor=[UIColor clearColor];
+    sv1.delegate=self;
+    [sv addSubview:sv1];
+    [sv bringSubviewToFront:sv1];
+    [sv1 addSubview:view1];
+    UIButton *next=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 40)];
+    [next setBackgroundColor:[UIColor orangeColor]];
+    [next setTitle:@"选座" forState:UIControlStateNormal];
+    [next setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [next addTarget:self action:@selector(doClickNext:) forControlEvents:UIControlEventTouchUpInside];
+    //UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem *one=[[UIBarButtonItem alloc]initWithCustomView:next];
+    [self setToolbarItems:@[one]];
 }
 
 
 #pragma mark - IBActions
 -(void)downGesture:(UIGestureRecognizer *)gesture{
     NSLog(@"hello!");
-    [view1 removeFromSuperview];
+    if (sv1.layer.frame.origin.y==300) {
+        [sv1 setContentOffset:CGPointMake(0, -300) animated:YES];
+    }else if (sv1.layer.frame.origin.y==600){
+        [sv1 setContentOffset:CGPointMake(0, 0) animated:YES];
+    }
+    
 }
-
+-(void)doClickNext:(UIGestureRecognizer *)gesture{
+    ui=[[UserInfoViewController alloc]init];
+    [self.navigationController pushViewController:ui animated:YES];
+}
 
 
 #pragma mark - Public
@@ -145,11 +170,11 @@
 #pragma mark - UIScrollDelegate
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     NSLog(@"hello i am dragging");
-    tool.hidden=YES;
+    
     
 }
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    tool.hidden=NO;
+    
     NSLog(@"end");
 }
 #pragma mark - NSCopying
