@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DetailPageImageViewController.h"
-#import "UserInfoViewController.h"
+#import "DetailtoCinemaViewController.h"
 
 @interface DetailPageViewController : UIViewController<UIScrollViewDelegate>{
     UIScrollView *sv;
@@ -18,7 +18,7 @@
     IBOutlet UIView  *view2;
     NSMutableArray *imgArray;
     DetailPageImageViewController *dpi;
-    UserInfoViewController *ui;
+    DetailtoCinemaViewController *d2c;
     }
 
 @end

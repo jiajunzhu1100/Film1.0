@@ -54,6 +54,7 @@
     filmName.textColor=[UIColor whiteColor];
     filmName.backgroundColor=[UIColor clearColor];
     [view1 addSubview:filmName];
+    [view1 bringSubviewToFront:filmName];
     view2=[[UIView alloc]initWithFrame:CGRectMake(0, 50, 400, 1950)];
     CGFloat toButtomView=view2.layer.frame.origin.y+view2.layer.frame.size.height;
     sv.contentSize=CGSizeMake(400, toButtomView+50);
@@ -98,6 +99,8 @@
     img5.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
     UIImageView *img6=[[UIImageView alloc]initWithFrame:CGRectMake(375, 0, 50, 50)];
     img6.image=[UIImage imageNamed:@"gangjiong@2x.jpg"];
+    img1.layer.borderWidth=img2.layer.borderWidth=img3.layer.borderWidth=img4.layer.borderWidth=img5.layer.borderWidth=img6.layer.borderWidth=3;
+    img1.layer.borderColor=img2.layer.borderColor=img3.layer.borderColor=img4.layer.borderColor=img5.layer.borderColor=img6.layer.borderColor=[[UIColor grayColor]CGColor];
 //    [sv2 addSubview:img1];
     imgArray=[[NSMutableArray alloc]initWithArray:@[img1,img2,img3,img4,img5,img6]];
     for (int i=0; i<imgArray.count; i++) {
@@ -127,14 +130,15 @@
     [sv addSubview:sv1];
     [sv bringSubviewToFront:sv1];
     [sv1 addSubview:view1];
-    UIButton *next=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 40)];
+    UIButton *next=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 150, 45)];
     [next setBackgroundColor:[UIColor orangeColor]];
-    [next setTitle:@"选座" forState:UIControlStateNormal];
+    [next setTitle:@"选座购票" forState:UIControlStateNormal];
     [next setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [next addTarget:self action:@selector(doClickNext:) forControlEvents:UIControlEventTouchUpInside];
     //UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *one=[[UIBarButtonItem alloc]initWithCustomView:next];
     [self setToolbarItems:@[one]];
+    self.navigationController.navigationBarHidden=NO;
 }
 
 
@@ -143,14 +147,14 @@
     NSLog(@"hello!");
     if (sv1.layer.frame.origin.y==300) {
         [sv1 setContentOffset:CGPointMake(0, -300) animated:YES];
-    }else if (sv1.layer.frame.origin.y==600){
-        [sv1 setContentOffset:CGPointMake(0, 0) animated:YES];
+    }else if (sv1.layer.frame.origin.y==300){
+        [sv1 setContentOffset:CGPointMake(0, -300) animated:YES];
     }
     
 }
 -(void)doClickNext:(UIGestureRecognizer *)gesture{
-    ui=[[UserInfoViewController alloc]init];
-    [self.navigationController pushViewController:ui animated:YES];
+    d2c=[[DetailtoCinemaViewController alloc]init];
+    [self.navigationController pushViewController:d2c animated:YES];
 }
 
 
@@ -170,11 +174,10 @@
 #pragma mark - UIScrollDelegate
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     NSLog(@"hello i am dragging");
-    
-    
+    [self.navigationController setToolbarHidden:YES animated:YES];
 }
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    
+    [self.navigationController setToolbarHidden:NO animated:YES];
     NSLog(@"end");
 }
 #pragma mark - NSCopying

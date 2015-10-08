@@ -47,7 +47,7 @@
 
     sv.contentSize=CGSizeMake(375, toButtomView+50);
     
-    self.navigationController.navigationBarHidden=YES;
+    self.navigationController.navigationBarHidden=NO;
     
     testSearch=[[UIButton alloc]initWithFrame:CGRectMake(0, 40, 40, 40)];
     [testSearch addTarget:self action:@selector(openSearchView:) forControlEvents:UIControlEventTouchUpInside];
@@ -57,7 +57,7 @@
     
     dp=[[DetailPageViewController alloc]init];
     [dp.view setFrame:CGRectMake(0, 0, 400, 600)];
-    //self.navigationController.navigationBarHidden=YES;
+    self.navigationController.navigationBarHidden=YES;
     self.navigationItem.backBarButtonItem.title=@"xueba";
     [self.navigationController setToolbarHidden:NO animated:YES];
     
