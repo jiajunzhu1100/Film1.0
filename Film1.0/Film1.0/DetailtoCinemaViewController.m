@@ -39,36 +39,34 @@
     table.delegate=self;
     table.dataSource=self;
     [table setBackgroundColor:[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1]];
-    
-}
+    self.navigationController.toolbarHidden=YES;
+    self.navigationController.navigationBarHidden=NO;
+   }
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 5;
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    if (indexPath.section==0) {
-        cell.textLabel.text=@"和平影都";
-        
-    }else if(indexPath.section==1){
-        cell.textLabel.text=@"江桥万达影城";
-        
-    }else if (indexPath.section==2){
-            cell.textLabel.text=@"金逸影城";
-    }else if (indexPath.section==3){
-        cell.textLabel.text=@"环艺影城";
+    SelectCinemaTableViewCell *sccell=(SelectCinemaTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"sccell"];
+    if (sccell==nil) {
+        NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"SelectCinemaTableViewCell" owner:self options:nil];
+        sccell=[nib objectAtIndex:0];
     }
-    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
-  
-    return cell;
+    return sccell;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 4;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 150;
 }
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
 }
-
+-(void)doClickNext{
+    [self.navigationController pushViewController:sp animated:YES];
+}
 @end

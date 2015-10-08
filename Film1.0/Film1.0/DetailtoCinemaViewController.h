@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface DetailtoCinemaViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+#import "SelectCinemaTableViewCell.h"
+#import "SeatPageViewController.h"
+@interface DetailtoCinemaViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,SelectCinemaTableViewCellDelegate>{
     __weak IBOutlet UITableView *table;
+    //SelectCinemaTableViewCell *scCell;
+    SeatPageViewController *sp;
 }
 
 @end
