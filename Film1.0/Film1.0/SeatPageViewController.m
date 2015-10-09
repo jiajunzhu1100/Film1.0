@@ -23,6 +23,15 @@
     bottomView=[[UIView alloc]initWithFrame:CGRectMake(0, 500, 375, 167)];
     [self.view addSubview:bottomView];
     [self.view bringSubviewToFront:bottomView];
+    for (int i=0; i<7; i++) {
+        for (int j=0; j<7; j++) {
+            UIButton *but=[[UIButton alloc]initWithFrame:CGRectMake(50+50*i, 50+50*j, 40, 40)];
+            but.tag=1;
+            [but setTitle:@"" forState:UIControlStateNormal];
+            [but setBackgroundColor:[UIColor orangeColor]];
+            [self.sv addSubview:but];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
