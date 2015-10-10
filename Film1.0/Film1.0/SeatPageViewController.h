@@ -10,6 +10,9 @@
 @interface SeatPageViewController : UIViewController{
     UIView *bottomView;
     UIButton *but;
+    NSMutableArray *seatArray;
+    NSMutableDictionary *seatDict;
+    NSString *pai;
 }
 @property (weak, nonatomic) IBOutlet UIScrollView *sv;
 
