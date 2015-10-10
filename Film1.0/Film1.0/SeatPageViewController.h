@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ConfirmPageViewController.h"
 @interface SeatPageViewController : UIViewController{
     UIView *bottomView;
     UIButton *but;
@@ -15,5 +16,5 @@
     NSString *pai;
 }
 @property (weak, nonatomic) IBOutlet UIScrollView *sv;
-
+-(NSMutableArray *)getLabel;
 @end

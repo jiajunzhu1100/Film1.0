@@ -24,6 +24,16 @@
     bottomView=[[UIView alloc]initWithFrame:CGRectMake(0, 567, 375, 100)];
     bottomView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:bottomView];
+    UIButton *confirm=[[UIButton alloc]initWithFrame:CGRectMake(275, 55, 95, 40)];
+    //confirm.titleLabel.text=@"确认";
+    [confirm setTitle:@"确认" forState:UIControlStateNormal];
+    [confirm setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    confirm.titleLabel.textAlignment=1;
+    confirm.backgroundColor=[UIColor orangeColor];
+    confirm.layer.cornerRadius=3.0;
+    [confirm addTarget:self action:@selector(doClickNext) forControlEvents:UIControlEventTouchUpInside];
+    [bottomView addSubview:confirm];
+    [bottomView bringSubviewToFront:confirm];
     UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(10, 5, 365, 30)];
     label.textAlignment=0;
     label.text=@"已选座位";
@@ -88,6 +98,7 @@
         [button setBackgroundColor:[UIColor orangeColor]];
         [seatArray addObject:pai];
         button.selected=YES;
+        [self selectedSeat];
         }
         
     }else if (button.selected==YES){
@@ -98,7 +109,7 @@
         [seatDict removeObjectForKey:pai];
         //[self selectedSeat];
     }
-    [self selectedSeat];
+    
    
     NSLog(@"%@",seatArray);
 }
@@ -128,6 +139,7 @@
         selectedSeat.textAlignment=1;
         selectedSeat.layer.borderColor=[[UIColor lightGrayColor]CGColor];
         selectedSeat.layer.borderWidth=0.5;
+        selectedSeat.layer.cornerRadius=3.0;
         selectedSeat.text=[NSString stringWithFormat:@"%@",seatArray[i-1]];
         selectedSeat.font=[UIFont fontWithName:@"Helvetica" size:13.0];
         [bottomView addSubview:selectedSeat];
@@ -136,7 +148,12 @@
         }
     NSLog(@"%@",seatDict);
 }
--(void)removeSeat{
+-(void)doClickNext{
+    ConfirmPageViewController *cp=[[ConfirmPageViewController alloc]init];
+    [self.navigationController pushViewController:cp animated:YES];
+}
+-(NSMutableArray *)getLabel{
+    return seatArray;
 }
 /*
 #pragma mark - Navigation
