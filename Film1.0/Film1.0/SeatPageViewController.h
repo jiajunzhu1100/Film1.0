@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 @interface SeatPageViewController : UIViewController{
     UIView *bottomView;
+    UIButton *but;
 }
 @property (weak, nonatomic) IBOutlet UIScrollView *sv;
 
