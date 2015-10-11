@@ -58,7 +58,6 @@
     dp=[[DetailPageViewController alloc]init];
     [dp.view setFrame:CGRectMake(0, 0, 400, 600)];
     self.navigationController.navigationBarHidden=YES;
-    self.navigationItem.backBarButtonItem.title=@"xueba";
     [self.navigationController setToolbarHidden:NO animated:YES];
     
     
