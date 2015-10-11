@@ -6,7 +6,7 @@
 //  Copyright © 2015年 郭正豪. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomePageViewController.h"
 
 @interface ViewController ()
 
@@ -58,7 +58,6 @@
     dp=[[DetailPageViewController alloc]init];
     [dp.view setFrame:CGRectMake(0, 0, 400, 600)];
     self.navigationController.navigationBarHidden=YES;
-    self.navigationItem.backBarButtonItem.title=@"xueba";
     [self.navigationController setToolbarHidden:NO animated:YES];
     
     

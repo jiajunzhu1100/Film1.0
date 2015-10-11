@@ -14,6 +14,7 @@
     NSMutableArray *seatArray;
     NSMutableDictionary *seatDict;
     NSString *pai;
+    UIButton *confirm;
 }
 @property (weak, nonatomic) IBOutlet UIScrollView *sv;
 -(NSMutableArray *)getLabel;

@@ -24,12 +24,13 @@
     bottomView=[[UIView alloc]initWithFrame:CGRectMake(0, 567, 375, 100)];
     bottomView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:bottomView];
-    UIButton *confirm=[[UIButton alloc]initWithFrame:CGRectMake(275, 55, 95, 40)];
+    confirm=[[UIButton alloc]initWithFrame:CGRectMake(275, 55, 95, 40)];
     //confirm.titleLabel.text=@"确认";
     [confirm setTitle:@"确认" forState:UIControlStateNormal];
     [confirm setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     confirm.titleLabel.textAlignment=1;
-    confirm.backgroundColor=[UIColor orangeColor];
+    confirm.backgroundColor=[UIColor lightGrayColor];
+    confirm.enabled=NO;
     confirm.layer.cornerRadius=3.0;
     [confirm addTarget:self action:@selector(doClickNext) forControlEvents:UIControlEventTouchUpInside];
     [bottomView addSubview:confirm];
@@ -99,6 +100,10 @@
         [seatArray addObject:pai];
         button.selected=YES;
         [self selectedSeat];
+            if (seatArray.count>=1) {
+                confirm.enabled=YES;
+                confirm.backgroundColor=[UIColor orangeColor];
+            }
         }
         
     }else if (button.selected==YES){
@@ -107,6 +112,10 @@
         [seatArray removeObject:pai];
         [seatDict[pai] removeFromSuperview];
         [seatDict removeObjectForKey:pai];
+        if (seatArray.count==0) {
+            confirm.backgroundColor=[UIColor lightGrayColor];
+            confirm.enabled=NO;
+        }
         //[self selectedSeat];
     }
     
@@ -114,18 +123,6 @@
     NSLog(@"%@",seatArray);
 }
 -(void)selectedSeat{
-//    for (int i=0; i<seatArray.count; i++) {
-//        UILabel *selectedSeat=[[UILabel alloc]initWithFrame:CGRectMake(23+i*85, 25, 75, 15)];
-//        
-//        if (i==4) {
-//            selectedSeat.frame=CGRectMake(23, 42, 75, 15);
-//        }
-//        selectedSeat.textAlignment=1;
-//        selectedSeat.layer.borderWidth=0.5;
-//        selectedSeat.layer.borderColor=[[UIColor lightGrayColor]CGColor];
-//        selectedSeat.font=[UIFont fontWithName:@"Helvetica" size:13.0];
-//        [bottomView addSubview:selectedSeat];
-//    }
     NSInteger i;
     i=seatArray.count;
     if (i<1 || i>5) {
@@ -149,7 +146,16 @@
     NSLog(@"%@",seatDict);
 }
 -(void)doClickNext{
+    if (seatArray.count==0) {
+        UIAlertController *err=[UIAlertController alertControllerWithTitle:nil message:@"请选择座位" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancel=[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
+            NSLog(@"cancel");
+        }];
+        [err addAction:cancel];
+        [self presentViewController:err animated:YES completion:nil];
+    }
     ConfirmPageViewController *cp=[[ConfirmPageViewController alloc]init];
+    cp.array=seatArray;
     [self.navigationController pushViewController:cp animated:YES];
 }
 -(NSMutableArray *)getLabel{
