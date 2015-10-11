@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SeatPageViewController.h"
+//@class SeatPageViewController;
 @interface ConfirmPageViewController : UIViewController{
-    SeatPageViewController *sp;
-}
 
+}
+@property(weak,nonatomic)NSString *label1;
 @end

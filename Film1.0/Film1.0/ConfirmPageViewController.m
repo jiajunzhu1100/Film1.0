@@ -7,7 +7,6 @@
 //
 
 #import "ConfirmPageViewController.h"
-
 @interface ConfirmPageViewController ()
 
 @end
@@ -17,20 +16,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    //sp=[[SeatPageViewController alloc]init];
     self.view.backgroundColor=[UIColor colorWithRed:248/255.0 green:248/255.0 blue:248/255.0 alpha:1];
     UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(0, 350, 375, 350)];
     label.textAlignment=1;
     label.textColor=[UIColor orangeColor];
-    label.text=@"1";
+    NSLog(@"%@",_label1);
+    label.text=[NSString stringWithFormat:@"%@",_label1];
     [self.view addSubview:label];
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    UIButton *back=[UIButton buttonWithType:UIButtonTypeCustom];
+    back.frame=CGRectMake(0, 0, 25, 25);
+    [back setImage:[UIImage imageNamed:@"leftarrowbutton@2x.jpg"] forState:UIControlStateNormal];
+    [back addTarget:self action:@selector(doBack) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *left=[[UIBarButtonItem alloc]initWithCustomView:back];
+    self.navigationItem.leftBarButtonItem=left;
+    UIButton *cancel=[UIButton buttonWithType:UIButtonTypeCustom];
+    cancel.frame=CGRectMake(100, 0, 45, 45);
+    [cancel setTitle:@"取消" forState:UIControlStateNormal];
+    [cancel setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [cancel addTarget:self action:@selector(doBackToRoot) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *right=[[UIBarButtonItem alloc]initWithCustomView:cancel];
+    self.navigationItem.rightBarButtonItem=right;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)doBack{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+-(void)doBackToRoot{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 /*
 #pragma mark - Navigation
 
