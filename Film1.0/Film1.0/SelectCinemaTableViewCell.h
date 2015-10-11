@@ -16,6 +16,7 @@
 @end
 @interface SelectCinemaTableViewCell : UITableViewCell<UIGestureRecognizerDelegate>{
     SeatPageViewController *sp;
+    UIView *fTimeView;
 }
 @property (weak, nonatomic) IBOutlet UIScrollView *sv;
 @property (weak, nonatomic) IBOutlet UIView *view1;

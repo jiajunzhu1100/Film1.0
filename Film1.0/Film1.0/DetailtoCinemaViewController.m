@@ -54,6 +54,7 @@
         NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"SelectCinemaTableViewCell" owner:self options:nil];
         sccell=[nib objectAtIndex:0];
     }
+    sccell.delegate=self;
     return sccell;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -67,6 +68,7 @@
     
 }
 -(void)doClickNext{
+    sp=[[SeatPageViewController alloc]init];
     [self.navigationController pushViewController:sp animated:YES];
 }
 @end
