@@ -123,18 +123,6 @@
     NSLog(@"%@",seatArray);
 }
 -(void)selectedSeat{
-//    for (int i=0; i<seatArray.count; i++) {
-//        UILabel *selectedSeat=[[UILabel alloc]initWithFrame:CGRectMake(23+i*85, 25, 75, 15)];
-//        
-//        if (i==4) {
-//            selectedSeat.frame=CGRectMake(23, 42, 75, 15);
-//        }
-//        selectedSeat.textAlignment=1;
-//        selectedSeat.layer.borderWidth=0.5;
-//        selectedSeat.layer.borderColor=[[UIColor lightGrayColor]CGColor];
-//        selectedSeat.font=[UIFont fontWithName:@"Helvetica" size:13.0];
-//        [bottomView addSubview:selectedSeat];
-//    }
     NSInteger i;
     i=seatArray.count;
     if (i<1 || i>5) {
@@ -167,7 +155,7 @@
         [self presentViewController:err animated:YES completion:nil];
     }
     ConfirmPageViewController *cp=[[ConfirmPageViewController alloc]init];
-    cp.label1=seatArray[0];
+    cp.array=seatArray;
     [self.navigationController pushViewController:cp animated:YES];
 }
 -(NSMutableArray *)getLabel{
