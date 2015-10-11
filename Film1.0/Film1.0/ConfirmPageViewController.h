@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//@class SeatPageViewController;
 @interface ConfirmPageViewController : UIViewController{
-
 }
-@property(weak,nonatomic)NSString *label1;
+@property(weak,nonatomic)NSMutableArray *array;
 @end

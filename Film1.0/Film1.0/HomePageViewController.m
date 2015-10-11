@@ -6,7 +6,7 @@
 //  Copyright © 2015年 郭正豪. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomePageViewController.h"
 
 @interface ViewController ()
 

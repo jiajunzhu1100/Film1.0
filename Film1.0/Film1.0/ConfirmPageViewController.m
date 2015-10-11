@@ -17,12 +17,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor=[UIColor colorWithRed:248/255.0 green:248/255.0 blue:248/255.0 alpha:1];
-    UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(0, 350, 375, 350)];
-    label.textAlignment=1;
-    label.textColor=[UIColor orangeColor];
-    NSLog(@"%@",_label1);
-    label.text=[NSString stringWithFormat:@"%@",_label1];
-    [self.view addSubview:label];
+    for (int i=0; i<_array.count; i++) {
+        UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(0, 300+50*i, 375, 40)];
+        label.textAlignment=1;
+        label.textColor=[UIColor orangeColor];
+        NSLog(@"%@",_array);
+        label.text=[NSString stringWithFormat:@"%@",_array[i]];
+        [self.view addSubview:label];
+
+    }
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     UIButton *back=[UIButton buttonWithType:UIButtonTypeCustom];
     back.frame=CGRectMake(0, 0, 25, 25);
@@ -47,6 +50,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)doBackToRoot{
+    
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 /*
