@@ -14,7 +14,7 @@
 #import "DetailPageViewController.h"
 #import "DingdanViewController.h"
 
-@interface ViewController : UIViewController<UserInfoViewControllerDelegate,OnSaleViewControllerDelegate>{
+@interface HomePageViewController : UIViewController<UserInfoViewControllerDelegate,OnSaleViewControllerDelegate>{
     UIScrollView *sv;
     
     OnSaleViewController *os;

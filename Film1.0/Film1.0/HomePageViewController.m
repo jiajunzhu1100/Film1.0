@@ -8,15 +8,17 @@
 
 #import "HomePageViewController.h"
 
-@interface ViewController ()
+@interface HomePageViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HomePageViewController
 #pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    char a[5]={1,2,3};
+    NSLog(@"%lu",strlen(a));
     [self setInitBackGound];
 }
 
@@ -58,8 +60,8 @@
     dp=[[DetailPageViewController alloc]init];
     [dp.view setFrame:CGRectMake(0, 0, 400, 600)];
     self.navigationController.navigationBarHidden=YES;
-    [self.navigationController setToolbarHidden:NO animated:YES];
-    
+    //[self.navigationController setToolbarHidden:NO animated:NO];
+    self.tabBarController.hidesBottomBarWhenPushed=YES;
     
 //    [self.view  bringSubviewToFront:mBtnSearch];
 }
