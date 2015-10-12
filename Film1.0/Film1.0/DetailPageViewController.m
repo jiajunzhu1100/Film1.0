@@ -139,6 +139,7 @@
     UIBarButtonItem *one=[[UIBarButtonItem alloc]initWithCustomView:next];
     [self setToolbarItems:@[one]];
     self.navigationController.navigationBarHidden=NO;
+    
 }
 
 
