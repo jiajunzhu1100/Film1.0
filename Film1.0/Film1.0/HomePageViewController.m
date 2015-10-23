@@ -59,10 +59,8 @@
     
     dp=[[DetailPageViewController alloc]init];
     [dp.view setFrame:CGRectMake(0, 0, 400, 600)];
-    self.navigationController.navigationBarHidden=YES;
-    //[self.navigationController setToolbarHidden:NO animated:NO];
-    self.tabBarController.hidesBottomBarWhenPushed=YES;
-    
+    [self.navigationController setToolbarHidden:NO animated:NO];
+    self.hidesBottomBarWhenPushed = YES;
 //    [self.view  bringSubviewToFront:mBtnSearch];
 }
 -(void)openSubview{

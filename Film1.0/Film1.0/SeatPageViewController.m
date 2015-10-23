@@ -139,6 +139,7 @@
         selectedSeat.layer.cornerRadius=3.0;
         selectedSeat.text=[NSString stringWithFormat:@"%@",seatArray[i-1]];
         selectedSeat.font=[UIFont fontWithName:@"Helvetica" size:13.0];
+        selectedSeat.tag = i;
         [bottomView addSubview:selectedSeat];
         [seatDict setObject:selectedSeat forKey:pai];
     }
