@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 @interface ConfirmPageViewController : UIViewController{
 }
+@property (weak, nonatomic) IBOutlet UILabel *seat;
 @property(weak,nonatomic)NSMutableArray *array;
 @end
