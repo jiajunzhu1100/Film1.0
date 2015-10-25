@@ -26,7 +26,7 @@
 //        [self.view addSubview:label];
 //
 //    }
-    self.seat.text = [_array componentsJoinedByString:@","];
+    self.seat.text = [_array componentsJoinedByString:@" "];
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     UIButton *back=[UIButton buttonWithType:UIButtonTypeCustom];
     back.frame=CGRectMake(0, 0, 25, 25);
@@ -51,7 +51,6 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)doBackToRoot{
-    
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 /*

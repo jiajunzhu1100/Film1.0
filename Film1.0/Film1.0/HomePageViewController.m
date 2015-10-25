@@ -59,12 +59,15 @@
     
     dp=[[DetailPageViewController alloc]init];
     [dp.view setFrame:CGRectMake(0, 0, 400, 600)];
-    [self.navigationController setToolbarHidden:NO animated:NO];
+    [self.navigationController setToolbarHidden:YES animated:NO];
     self.hidesBottomBarWhenPushed = YES;
+    self.navigationController.navigationBarHidden = YES;
 //    [self.view  bringSubviewToFront:mBtnSearch];
 }
 -(void)openSubview{
     [self.navigationController pushViewController:dp animated:YES];
+    self.navigationController.toolbarHidden = NO;
+    self.navigationController.navigationBarHidden = NO;
 }
 -(void)openDingdan{
     dingDan=[[DingdanViewController alloc]init];

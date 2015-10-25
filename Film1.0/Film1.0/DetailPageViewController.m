@@ -138,7 +138,6 @@
     //UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *one=[[UIBarButtonItem alloc]initWithCustomView:next];
     [self setToolbarItems:@[one]];
-    self.navigationController.navigationBarHidden=NO;
     
 }
 

@@ -131,17 +131,27 @@
     if (but.selected==YES) {
         
     }else if (but.selected==NO){
-    UILabel *selectedSeat;
-        selectedSeat=[[UILabel alloc]initWithFrame:CGRectMake(i*85-67, 35, 75, 15)];
-        selectedSeat.textAlignment=1;
-        selectedSeat.layer.borderColor=[[UIColor lightGrayColor]CGColor];
-        selectedSeat.layer.borderWidth=0.5;
-        selectedSeat.layer.cornerRadius=3.0;
-        selectedSeat.text=[NSString stringWithFormat:@"%@",seatArray[i-1]];
-        selectedSeat.font=[UIFont fontWithName:@"Helvetica" size:13.0];
-        selectedSeat.tag = i;
-        [bottomView addSubview:selectedSeat];
-        [seatDict setObject:selectedSeat forKey:pai];
+//    UILabel *selectedSeat;
+//        selectedSeat=[[UILabel alloc]initWithFrame:CGRectMake(i*85-67, 35, 75, 15)];
+//        selectedSeat.textAlignment=1;
+//        selectedSeat.layer.borderColor=[[UIColor lightGrayColor]CGColor];
+//        selectedSeat.layer.borderWidth=0.5;
+//        selectedSeat.layer.cornerRadius=3.0;
+//        selectedSeat.text=[NSString stringWithFormat:@"%@",seatArray[i-1]];
+//        selectedSeat.font=[UIFont fontWithName:@"Helvetica" size:13.0];
+//        selectedSeat.tag = i;
+//        [bottomView addSubview:selectedSeat];
+//        [seatDict setObject:selectedSeat forKey:pai];
+        for (int i = 0; i<seatArray.count; i++) {
+            UILabel *selectedSeat;
+            selectedSeat=[[UILabel alloc]initWithFrame:CGRectMake(i*85, 35, 75, 15)];
+            selectedSeat.textAlignment=1;
+            selectedSeat.layer.borderColor=[[UIColor lightGrayColor]CGColor];
+            selectedSeat.layer.borderWidth=0.5;
+            selectedSeat.layer.cornerRadius=3.0;
+            selectedSeat.text=[NSString stringWithFormat:@"%@",seatArray[i]];
+            selectedSeat.font=[UIFont fontWithName:@"Helvetica" size:13.0];
+        }
     }
         }
     NSLog(@"%@",seatDict);
